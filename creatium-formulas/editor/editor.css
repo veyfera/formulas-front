@@ -1,0 +1,473 @@
+/* general styles */
+
+expression-editor {
+    border-radius: 4px;
+    transition: border-color ease-in-out .15s;
+    width: 100%;
+    outline: none;
+    background-color: white;
+    border-color: transparent;
+    display: flex;
+}
+
+expression-editor[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+expression-editor.has-error {
+    border-color: #f6e4e4 !important;
+}
+
+expression-editor.has-error:hover {
+    border-color: #eecdcd !important;
+}
+
+expression-editor.has-error:focus-within {
+    border-color: #fb0000 !important;
+}
+
+.expression-editor_container {
+    display: flex;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.expression-editor_left-label {
+    display: flex;
+    align-items: start;
+    padding: 2px;
+    flex-shrink: 0;
+}
+
+.expression-editor_left-menu {
+    padding: 4px;
+    position: relative;
+    z-index: 1;
+}
+
+.expression-editor_link-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 26px;
+    line-height: 26px;
+    white-space: nowrap;
+    background: white;
+    padding-left: calc(100% + 4px);
+    z-index: -1;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+    padding-right: 4px;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-size: 12px;
+    display: none;
+}
+
+.expression-editor_left-menu.expandable.expanded .expression-editor_link-container {
+    display: block;
+    padding-right: 8px;
+}
+
+.expression-editor_link-element {
+    text-decoration: underline;
+    line-height: 26px;
+    color: #666666!important;
+}
+
+.expression-editor_fx-icon {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAmCAYAAAHbzwkFAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAJKADAAQAAAABAAAAJgAAAABzBpKmAAAD/UlEQVRYCb1YW4hNURg+LjPjWlJyifYUD5RyKZeSBy+EB4UXSk2iaJKS8uDRk0ku4RGpocYl8iIlD0MSD4wQMZ0TjTHlYVxe5DK+b5//X/Oftddu732O8dV3/vu/91l7rbXXOaXSML4Mq0W1VVIwpIXNUAbByA9ogpOuZLRziaKOh2K7zOVw0HAOSYgd00IBJvDraVWikgmKiVC+gw9AJnaBkegQVbRDnBVdg+fFLrEDK3+pw5MsqME5WNdrPDDGGkc/9B/gK+NLqLxkEKPE6yeoP1HkJ7oEfSbOAYXJWhDLUBIvdUMSL0PWQKvptN1K7NRGrwET2KEPfA/GxX9EaYIkVlRF/LnR6AmVg6yXtDKRmOXQ4qw8F7ePdwa8p12kqlwV+wPkAS9WY9pGnxDhfCW2VoWz2agu+F9tPrp0gmu9bvwWxz2fM+dCY6Ne8RwTe7dIxlqNfgl6EFvgZXJivcAXSYzxmgahKbkYSURPVcSf2qACS6fpdhOfSp2bA6/gkzHiK5i4A/FpzUcmpmE1AhWwD9wA1oVbqNKrqewu2qnZNFkPfYnYHUUbtUmhDmqu+tBTi6Tyba4OkmQ3Os7QOSAf/zzwGfgOJPaBXEK5oIMakoXepdysuFjfgGx2WGxdwDCLgWPDRvx6DeEbqtlokulyCPpRY6t6Agp3gCB0jDSotkr1l6HQxyUUhF9A+xH4GKT+BCyLTnsMGASDZAgaU+mahCZkqIH6uFMouE3/ViMk9Wp+rAyHxigzock20TbRecYnRsSbGpWdYAsVgEvEb2SbcEzs7sCTCfM/g65QG1C2MyBQvxtY+LkzqJ8y3p7PeM5TsC1WWsPoU6BvMnYhdTyyL4D2bnz9LuIzC3WtM3l/xo3YG0tdNXVeO1G21LuZQdihNc8Tuj2CJRr9K8dBNLIjwFPFiCDvyp/uXX3As0fU7EZ3OxpFdNY2hNAIcVeuF43UFrrmU2TbkYo3nkIdciaHRihU6q+o3CeSULNGfTw66a8rjhJ1e5zihOdR3I6g6rfhnwz6iOAog5pXaO7xglpI6Y8Oj142HtI3I4eIwDLo55xkMC8WIdE26AkUckO076oFsO2osp5vTtuHOn/E2JckzGysQ4ptdCe7JM7gTdo6q6feCI81WahnQkdo2pXSeCH8L1Ni8X8GaTH1F7kh3kgZrICtYAjcQmaHAvTlWfacDxa91hCdN1IRtkIqeHDiU9ilDsgm8DXIxcLrHwF/gvxHai9YugIOCZ9D8k8STuQd4ACoMcp+sAW0uA/D5lAPzZE9gTy/Ln6U13IkspBzIrQi+ObXxhdTcuCOMQGfHSDPS1pDeROcBdZscMtgbwPXgONA/ia6B3aCL8D/gr8pY23X/G2T8QAAAABJRU5ErkJggg==');
+    background-size: 18px 19px;
+    width: 18px;
+    height: 19px;
+    position: relative;
+}
+
+.expression-editor_left-menu.expandable .expression-editor_fx-icon {
+    cursor: pointer;
+}
+
+.expression-editor_fx-icon[title]:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    border-bottom: 1px dotted black;
+    opacity: 0.5;
+}
+
+expression-editor .CodeMirror {
+    background: transparent;
+}
+
+expression-editor .CodeMirror-lines {
+    padding: 6px 0;
+}
+
+expression-editor .CodeMirror-overlayscroll-horizontal {
+    height: 4px;
+}
+
+expression-editor .CodeMirror-overlayscroll-vertical {
+    width: 4px;
+}
+
+expression-editor .CodeMirror-overlayscroll-horizontal div, expression-editor .CodeMirror-overlayscroll-vertical div {
+    background: #d6d6d6;
+}
+
+expression-editor .CodeMirror-overlayscroll-horizontal:hover div,
+expression-editor .CodeMirror-overlayscroll-horizontal:active div,
+expression-editor .CodeMirror-overlayscroll-vertical:hover div,
+expression-editor .CodeMirror-overlayscroll-vertical:active div {
+    background: #c2c2c2;
+}
+
+/* redactor theme */
+
+expression-editor.theme-redactor {
+    border: 2px solid #eeeeee;
+}
+
+expression-editor.theme-redactor:hover {
+    border-color: #dddddd;
+}
+
+expression-editor.theme-redactor:focus-within {
+    border-color: #0064fb;
+}
+
+expression-editor.theme-redactor .expression-editor_left-label {
+    background-color: #f7f7f7;
+    border-radius: 2px 0 0 2px;
+}
+
+expression-editor.theme-redactor .expression-editor_fx-icon {
+    opacity: 0.6;
+}
+
+/* cabinet theme */
+
+expression-editor.theme-cabinet {
+    border: 1px solid #dcdfe6;
+}
+
+expression-editor.theme-cabinet:hover {
+    border-color: #c6c8d0;
+}
+
+expression-editor.theme-cabinet:focus-within {
+    border-color: #8b63ef;
+}
+
+expression-editor.theme-cabinet .expression-editor_left-label {
+    background-color: #f7f7f7;
+}
+
+expression-editor.theme-cabinet .expression-editor_left-label {
+    background-color: #f5f7fa;
+    border-radius: 3px 0 0 3px;
+}
+
+expression-editor.theme-cabinet .expression-editor_fx-icon {
+    opacity: 0.45;
+}
+
+/* code highlight */
+
+.cm-s-formula.CodeMirror {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+    font-size: 12px !important;
+    line-height: 1.5;
+}
+
+.cm-s-formula .cm-parentheses-open.parentheses-match,
+.cm-s-formula .cm-parentheses-close.parentheses-match {
+    outline: 1px solid;
+}
+
+.cm-s-formula:not(.CodeMirror-focused) .cm-parentheses-open.parentheses-match,
+.cm-s-formula:not(.CodeMirror-focused) .cm-parentheses-close.parentheses-match {
+    outline: none;
+}
+
+.cm-s-formula .parentheses-1, .cm-s-formula .parentheses-11, .cm-s-formula .parentheses-21, .cm-s-formula .parentheses-31,
+.cm-s-formula .parentheses-41, .cm-s-formula .parentheses-51, .cm-s-formula .parentheses-61, .cm-s-formula .parentheses-71,
+.cm-s-formula .parentheses-81, .cm-s-formula .parentheses-91 {
+    color: #8cb900;
+}
+
+.cm-s-formula .parentheses-2, .cm-s-formula .parentheses-12, .cm-s-formula .parentheses-22, .cm-s-formula .parentheses-32,
+.cm-s-formula .parentheses-42, .cm-s-formula .parentheses-52, .cm-s-formula .parentheses-62, .cm-s-formula .parentheses-72,
+.cm-s-formula .parentheses-82, .cm-s-formula .parentheses-92 {
+    color: #ff7100;
+}
+
+.cm-s-formula .parentheses-3, .cm-s-formula .parentheses-13, .cm-s-formula .parentheses-23, .cm-s-formula .parentheses-33,
+.cm-s-formula .parentheses-43, .cm-s-formula .parentheses-53, .cm-s-formula .parentheses-63, .cm-s-formula .parentheses-73,
+.cm-s-formula .parentheses-83, .cm-s-formula .parentheses-93 {
+    color: #00cdc4;
+}
+
+.cm-s-formula .parentheses-4, .cm-s-formula .parentheses-14, .cm-s-formula .parentheses-24, .cm-s-formula .parentheses-34,
+.cm-s-formula .parentheses-44, .cm-s-formula .parentheses-54, .cm-s-formula .parentheses-64, .cm-s-formula .parentheses-74,
+.cm-s-formula .parentheses-84, .cm-s-formula .parentheses-94 {
+    color: #ff38cd;
+}
+
+.cm-s-formula .parentheses-5, .cm-s-formula .parentheses-15, .cm-s-formula .parentheses-25, .cm-s-formula .parentheses-35,
+.cm-s-formula .parentheses-45, .cm-s-formula .parentheses-55, .cm-s-formula .parentheses-65, .cm-s-formula .parentheses-75,
+.cm-s-formula .parentheses-85, .cm-s-formula .parentheses-95 {
+    color: #0061ff;
+}
+
+.cm-s-formula .parentheses-6, .cm-s-formula .parentheses-16, .cm-s-formula .parentheses-26, .cm-s-formula .parentheses-36,
+.cm-s-formula .parentheses-46, .cm-s-formula .parentheses-56, .cm-s-formula .parentheses-66, .cm-s-formula .parentheses-76,
+.cm-s-formula .parentheses-86, .cm-s-formula .parentheses-96 {
+    color: #c0d400;
+}
+
+.cm-s-formula .parentheses-7, .cm-s-formula .parentheses-17, .cm-s-formula .parentheses-27, .cm-s-formula .parentheses-37,
+.cm-s-formula .parentheses-47, .cm-s-formula .parentheses-57, .cm-s-formula .parentheses-67, .cm-s-formula .parentheses-77,
+.cm-s-formula .parentheses-87, .cm-s-formula .parentheses-97 {
+    color: #ff2727;
+}
+
+.cm-s-formula .parentheses-8, .cm-s-formula .parentheses-18, .cm-s-formula .parentheses-28, .cm-s-formula .parentheses-38,
+.cm-s-formula .parentheses-48, .cm-s-formula .parentheses-58, .cm-s-formula .parentheses-68, .cm-s-formula .parentheses-78,
+.cm-s-formula .parentheses-88, .cm-s-formula .parentheses-98 {
+    color: #00e745;
+}
+
+.cm-s-formula .parentheses-9, .cm-s-formula .parentheses-19, .cm-s-formula .parentheses-29, .cm-s-formula .parentheses-39,
+.cm-s-formula .parentheses-49, .cm-s-formula .parentheses-59, .cm-s-formula .parentheses-69, .cm-s-formula .parentheses-79,
+.cm-s-formula .parentheses-89, .cm-s-formula .parentheses-99 {
+    color: #a035ff;
+}
+
+.cm-s-formula .parentheses-10, .cm-s-formula .parentheses-20, .cm-s-formula .parentheses-30, .cm-s-formula .parentheses-40,
+.cm-s-formula .parentheses-50, .cm-s-formula .parentheses-60, .cm-s-formula .parentheses-70, .cm-s-formula .parentheses-80,
+.cm-s-formula .parentheses-90, .cm-s-formula .parentheses-100 {
+    color: #00a7ff;
+}
+
+.cm-s-formula .parentheses-error {
+    color: #ba0000!important;
+    background: rgb(186 0 0 / 20%)!important;
+}
+
+.cm-s-formula .parentheses-block {
+    /* пока отключил, потому что в многострочных формулах выглядит странно
+    background: rgb(0 0 0 / 5%);
+     */
+}
+
+.cm-s-formula:not(.CodeMirror-focused) .parentheses-block {
+    background: transparent;
+}
+
+.cm-s-formula .cm-string {
+    color: #a11;
+}
+
+.cm-s-formula .cm-number {
+    color: #164;
+}
+
+.cm-s-formula .cm-comment {
+    color: #a50;
+}
+
+.cm-s-formula .cm-date {
+    color: #11aa9d;
+}
+
+.cm-s-formula .cm-column {
+    color: #aa7a11;
+}
+
+.cm-s-formula .cm-function {
+    color: #708;
+}
+
+.cm-s-formula .cm-operator {
+    color: #9c9c9c;
+}
+
+.cm-s-formula .error-mark svg {
+    position: absolute;
+    top: -2px;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.cm-s-formula .analyzer {
+    cursor: pointer;
+    border: 1px solid rgb(191 191 191);
+    border-left-color: transparent;
+    border-right-color: transparent;
+    margin: -1px;
+}
+
+.cm-s-formula .analyzer-start {
+    border-left-color: rgb(191 191 191);
+}
+
+.cm-s-formula .analyzer-end {
+    border-right-color: rgb(191 191 191);
+}
+
+.cm-s-formula .analyzer-active {
+    background-color: rgb(191 191 191)!important;
+}
+
+
+
+expression-scope-viewer {
+    white-space: pre-wrap;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+    font-size: 12px !important;
+    line-height: 1.7;
+    padding: 4px;
+    width: 100%;
+    display: block;
+    overflow: auto;
+}
+
+expression-scope-viewer ul {
+    list-style: none;
+    margin: 0 0 0 14px;
+    padding: 0;
+}
+
+expression-scope-viewer li {
+    position: relative;
+    white-space: pre;
+}
+
+expression-scope-viewer .sv-index:before {
+    content: attr(data-text);
+}
+
+expression-scope-viewer .sv-prop[data-copy] {
+    background: #e6e6e6;
+    padding: 1px 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+expression-scope-viewer .sv-prop[data-copy]:hover {
+    background: #d2d2d2;
+}
+
+expression-scope-viewer .sv-prop[data-copy]:active {
+    background: #afafaf;
+}
+
+.expression-scope-viewer-copied {
+    position: absolute;
+    bottom: 100%;
+    height: 28px;
+    line-height: 28px;
+    top: 0;
+    left: 0;
+    background: #000000;
+    padding: 0 10px;
+    color: white;
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 100000;
+    transform: translateY(5px);
+    pointer-events: none;
+    font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace;
+    font-size: 12px;
+}
+
+.expression-scope-viewer-copied.sv-animated1 {
+    transition: all 0.5s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.expression-scope-viewer-copied.sv-animated2 {
+    opacity: 0;
+}
+
+expression-scope-viewer .sv-null {
+}
+
+expression-scope-viewer .sv-bool {
+}
+
+expression-scope-viewer .sv-num {
+    color: #164;
+}
+
+expression-scope-viewer .sv-date {
+    color: #11aa9d;
+}
+
+expression-scope-viewer .sv-string {
+    color: #a11;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 3000px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+expression-scope-viewer .sv-collapser {
+    position: absolute;
+    left: -12px;
+    top: 4px;
+    padding: 1px;
+    cursor: pointer;
+    transform: rotate(0);
+    transition: transform .2s;
+}
+
+expression-scope-viewer > .sv-collapser {
+    display: none;
+}
+
+expression-scope-viewer .sv-collapser:before {
+    content: "";
+    display: block;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: silver;
+    transform: scaleX(0.75) translateY(3px);
+}
+
+expression-scope-viewer .sv-collapser.sv-collapsed ~ .sv-collapsible {
+    height: 1px;
+    width: 1px;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    pointer-events: none;
+    margin: 0;
+}
+
+expression-scope-viewer .sv-collapser.sv-collapsed {
+    transform: rotate(-90deg);
+}
+
+expression-scope-viewer .sv-collapsible + .sv-collapsed-counter {
+    display: none;
+}
+
+expression-scope-viewer .sv-collapsible + .sv-collapsed-counter:before {
+    content: attr(data-text);
+    color: grey;
+}
+
+expression-scope-viewer .sv-collapser.sv-collapsed ~ .sv-collapsed-counter {
+    display: inline-block;
+    padding: 0 4px;
+}

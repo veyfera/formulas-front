@@ -1,0 +1,32 @@
+{
+  "name": "creatium-formulas",
+  "version": "1.36.0",
+  "typings": "index.d.ts",
+  "scripts": {
+    "build-formulas": "cd typescript && rollup --config",
+    "build-editor": "cd editor && rollup --config",
+    "watch-formulas": "cd typescript && rollup --config --watch",
+    "watch-editor": "cd editor && rollup --config --watch",
+    "run-playground": "cd playground && node server.js",
+    "sync-l10n": "cd l10n && node sync.mjs",
+    "test-parser": "mocha --ui bdd test/parser.test.js",
+    "test-pick": "mocha -g 'pickKeys()'",
+    "test-specification": "mocha --ui bdd test/specification.test.js",
+    "upload-to-playground": "npm run build-editor && node upload-to-playground.js"
+  },
+  "devDependencies": {
+    "@notionhq/client": "^2.2.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "@types/codemirror": "^5.60.5",
+    "axios": "^1.5.0",
+    "codemirror": "^5.65.3",
+    "form-data": "^4.0.0",
+    "mocha": "^9.1.3",
+    "mongodb": "^4.1.2",
+    "parse5": "^7.1.1",
+    "rollup": "^2.58.0",
+    "should": "^13.2.3"
+  }
+}

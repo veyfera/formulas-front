@@ -1,0 +1,934 @@
+
+> creatium-formulas@1.36.0 test-specification
+> mocha --ui bdd test/specification.test.js
+
+
+
+  specification
+    pickKeys()
+{
+  error: 'optimize :: objectToArray1 :: number',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogaW50'
+}
+      1) pickKeys(1, ["a", "c"]), mongo
+{
+  error: 'optimize :: pickKeys1 :: number',
+  result: null,
+  time: 1,
+  code: 'pickKeys(1, ["a", "c"])',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoMSwgW1wiYVwiLCBcImNcIl0pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6Ik51bWJlciIsInZhbHVlIjoxLCJsb2NhdGlvbiI6WzksMTBdfSx7InR5cGUiOiJBcnJheUV4cHJlc3Npb24iLCJlbGVtZW50cyI6W3sidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYSIsImxvY2F0aW9uIjpbMTMsMTZdfSx7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImMiLCJsb2NhdGlvbiI6WzE4LDIxXX1dLCJsb2NhdGlvbiI6WzEyLDIyXX1dLCJjYWxsZWUiOiJwaWNrS2V5cyIsImxvY2F0aW9uIjpbMCw4XX0sImVycm9yIjpudWxsfQ== eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys(1, ["a", "c"]), php
+{ error: null, result: null, time: 2 }
+      2) pickKeys(1, ["a", "c"]), node
+{
+  error: 'optimize :: objectToArray1 :: number',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogZG91Ymxl'
+}
+      3) pickKeys(Infinity, ["a", "c"]), mongo
+{
+  error: 'optimize :: pickKeys1 :: number',
+  result: null,
+  time: 1,
+  code: 'pickKeys(Infinity, ["a", "c"])',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoSW5maW5pdHksIFtcImFcIiwgXCJjXCJdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJOdW1iZXIiLCJ2YWx1ZSI6IkluZmluaXR5IiwibG9jYXRpb24iOls5LDE3XX0seyJ0eXBlIjoiQXJyYXlFeHByZXNzaW9uIiwiZWxlbWVudHMiOlt7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImEiLCJsb2NhdGlvbiI6WzIwLDIzXX0seyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJjIiwibG9jYXRpb24iOlsyNSwyOF19XSwibG9jYXRpb24iOlsxOSwyOV19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys(Infinity, ["a", "c"]), php
+{ error: null, result: null, time: 0 }
+      4) pickKeys(Infinity, ["a", "c"]), node
+{
+  error: 'optimize :: objectToArray1 :: number',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogZG91Ymxl'
+}
+      5) pickKeys(NaN, ["a", "c"]), mongo
+{
+  error: 'optimize :: pickKeys1 :: number',
+  result: null,
+  time: 1,
+  code: 'pickKeys(NaN, ["a", "c"])',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoTmFOLCBbXCJhXCIsIFwiY1wiXSkiLCJzb3VyY2UiOnsidHlwZSI6IkNhbGxFeHByZXNzaW9uIiwiYXJndW1lbnRzIjpbeyJ0eXBlIjoiTnVtYmVyIiwidmFsdWUiOiJOYU4iLCJsb2NhdGlvbiI6WzksMTJdfSx7InR5cGUiOiJBcnJheUV4cHJlc3Npb24iLCJlbGVtZW50cyI6W3sidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYSIsImxvY2F0aW9uIjpbMTUsMThdfSx7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImMiLCJsb2NhdGlvbiI6WzIwLDIzXX1dLCJsb2NhdGlvbiI6WzE0LDI0XX1dLCJjYWxsZWUiOiJwaWNrS2V5cyIsImxvY2F0aW9uIjpbMCw4XX0sImVycm9yIjpudWxsfQ== eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys(NaN, ["a", "c"]), php
+{ error: null, result: null, time: 0 }
+      6) pickKeys(NaN, ["a", "c"]), node
+{
+  error: 'optimize :: objectToArray1 :: string',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogc3RyaW5n'
+}
+      7) pickKeys("a", ["a", "c"]), mongo
+{
+  error: 'optimize :: pickKeys1 :: string',
+  result: null,
+  time: 1,
+  code: 'pickKeys("a", ["a", "c"])',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoXCJhXCIsIFtcImFcIiwgXCJjXCJdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImEiLCJsb2NhdGlvbiI6WzksMTJdfSx7InR5cGUiOiJBcnJheUV4cHJlc3Npb24iLCJlbGVtZW50cyI6W3sidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYSIsImxvY2F0aW9uIjpbMTUsMThdfSx7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImMiLCJsb2NhdGlvbiI6WzIwLDIzXX1dLCJsb2NhdGlvbiI6WzE0LDI0XX1dLCJjYWxsZWUiOiJwaWNrS2V5cyIsImxvY2F0aW9uIjpbMCw4XX0sImVycm9yIjpudWxsfQ== eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys("a", ["a", "c"]), php
+{ error: null, result: null, time: 0 }
+      8) pickKeys("a", ["a", "c"]), node
+{
+  error: 'optimize :: objectToArray1 :: array',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogYXJyYXk='
+}
+      9) pickKeys([], ["a", "c"]), mongo
+{
+  error: 'optimize :: pickKeys1 :: array',
+  result: null,
+  time: 1,
+  code: 'pickKeys([], ["a", "c"])',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoW10sIFtcImFcIiwgXCJjXCJdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJBcnJheUV4cHJlc3Npb24iLCJlbGVtZW50cyI6W10sImxvY2F0aW9uIjpbOSwxMV19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbeyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJhIiwibG9jYXRpb24iOlsxNCwxN119LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYyIsImxvY2F0aW9uIjpbMTksMjJdfV0sImxvY2F0aW9uIjpbMTMsMjNdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      10) pickKeys([], ["a", "c"]), php
+{ error: null, result: null, time: 1 }
+      11) pickKeys([], ["a", "c"]), node
+{
+  error: 'optimize :: objectToArray1 :: boolean',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogYm9vbA=='
+}
+      12) pickKeys(true, ["a", "c"]), mongo
+{
+  error: 'optimize :: pickKeys1 :: boolean',
+  result: null,
+  time: 1,
+  code: 'pickKeys(true, ["a", "c"])',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXModHJ1ZSwgW1wiYVwiLCBcImNcIl0pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IkJvb2xlYW4iLCJ2YWx1ZSI6dHJ1ZSwibG9jYXRpb24iOls5LDEzXX0seyJ0eXBlIjoiQXJyYXlFeHByZXNzaW9uIiwiZWxlbWVudHMiOlt7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImEiLCJsb2NhdGlvbiI6WzE2LDE5XX0seyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJjIiwibG9jYXRpb24iOlsyMSwyNF19XSwibG9jYXRpb24iOlsxNSwyNV19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys(true, ["a", "c"]), php
+{ error: null, result: null, time: 0 }
+      13) pickKeys(true, ["a", "c"]), node
+{
+  error: 'evaluate :: in1 :: number',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogaW50'
+}
+      14) pickKeys(object2, 1), mongo
+{
+  error: 'evaluate :: pickKeys2 :: number',
+  result: null,
+  time: 1,
+  code: 'pickKeys(object2, 1)',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgMSkiLCJzb3VyY2UiOnsidHlwZSI6IkNhbGxFeHByZXNzaW9uIiwiYXJndW1lbnRzIjpbeyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJvYmplY3QyIiwibG9jYXRpb24iOls5LDE2XX0seyJ0eXBlIjoiTnVtYmVyIiwidmFsdWUiOjEsImxvY2F0aW9uIjpbMTgsMTldfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      15) pickKeys(object2, 1), php
+{ error: 'evaluate :: pickKeys2 :: number', result: null, time: 1 }
+      16) pickKeys(object2, 1), node
+{
+  error: 'evaluate :: in1 :: number',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogZG91Ymxl'
+}
+      17) pickKeys(object2, Infinity), mongo
+{
+  error: 'evaluate :: pickKeys2 :: number',
+  result: null,
+  time: 1,
+  code: 'pickKeys(object2, Infinity)',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgSW5maW5pdHkpIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoib2JqZWN0MiIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6Ik51bWJlciIsInZhbHVlIjoiSW5maW5pdHkiLCJsb2NhdGlvbiI6WzE4LDI2XX1dLCJjYWxsZWUiOiJwaWNrS2V5cyIsImxvY2F0aW9uIjpbMCw4XX0sImVycm9yIjpudWxsfQ== eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      18) pickKeys(object2, Infinity), php
+{ error: 'evaluate :: pickKeys2 :: number', result: null, time: 1 }
+      19) pickKeys(object2, Infinity), node
+{
+  error: 'evaluate :: in1 :: number',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogZG91Ymxl'
+}
+      20) pickKeys(object2, NaN), mongo
+{
+  error: 'evaluate :: pickKeys2 :: number',
+  result: null,
+  time: 1,
+  code: 'pickKeys(object2, NaN)',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgTmFOKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJJZGVudGlmaWVyIiwiY29sdW1uIjpmYWxzZSwibmFtZSI6Im9iamVjdDIiLCJsb2NhdGlvbiI6WzksMTZdfSx7InR5cGUiOiJOdW1iZXIiLCJ2YWx1ZSI6Ik5hTiIsImxvY2F0aW9uIjpbMTgsMjFdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      21) pickKeys(object2, NaN), php
+{ error: 'evaluate :: pickKeys2 :: number', result: null, time: 0 }
+      22) pickKeys(object2, NaN), node
+{
+  error: 'evaluate :: in1 :: string',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogc3RyaW5n'
+}
+      23) pickKeys(object2, "a"), mongo
+{
+  error: 'evaluate :: pickKeys2 :: string',
+  result: null,
+  time: 1,
+  code: 'pickKeys(object2, "a")',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgXCJhXCIpIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoib2JqZWN0MiIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYSIsImxvY2F0aW9uIjpbMTgsMjFdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      24) pickKeys(object2, "a"), php
+{ error: 'evaluate :: pickKeys2 :: string', result: null, time: 0 }
+      25) pickKeys(object2, "a"), node
+{
+  error: 'evaluate :: in1 :: object',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogb2JqZWN0'
+}
+      26) pickKeys(object2, {}), mongo
+{
+  error: 'evaluate :: pickKeys2 :: object',
+  result: null,
+  time: 1,
+  code: 'pickKeys(object2, {})',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0Miwge30pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoib2JqZWN0MiIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6Ik9iamVjdEV4cHJlc3Npb24iLCJwcm9wZXJ0aWVzIjpbXSwibG9jYXRpb24iOlsxOCwyMF19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      27) pickKeys(object2, {}), php
+{ error: 'evaluate :: pickKeys2 :: object', result: null, time: 1 }
+      28) pickKeys(object2, {}), node
+{
+  error: 'evaluate :: in1 :: boolean',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogYm9vbA=='
+}
+      29) pickKeys(object2, true), mongo
+{
+  error: 'evaluate :: pickKeys2 :: boolean',
+  result: null,
+  time: 1,
+  code: 'pickKeys(object2, true)',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgdHJ1ZSkiLCJzb3VyY2UiOnsidHlwZSI6IkNhbGxFeHByZXNzaW9uIiwiYXJndW1lbnRzIjpbeyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJvYmplY3QyIiwibG9jYXRpb24iOls5LDE2XX0seyJ0eXBlIjoiQm9vbGVhbiIsInZhbHVlIjp0cnVlLCJsb2NhdGlvbiI6WzE4LDIyXX1dLCJjYWxsZWUiOiJwaWNrS2V5cyIsImxvY2F0aW9uIjpbMCw4XX0sImVycm9yIjpudWxsfQ== eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      30) pickKeys(object2, true), php
+{ error: 'evaluate :: pickKeys2 :: boolean', result: null, time: 0 }
+      31) pickKeys(object2, true), node
+{
+  error: 'evaluate :: objectToArray1 :: number',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJG9iamVjdFRvQXJyYXkgcmVxdWlyZXMgYSBkb2N1bWVudCBpbnB1dCwgZm91bmQ6IGludA=='
+}
+      32) pickKeys(number1, ["a", "c"]), mongo
+{
+  error: 'evaluate :: pickKeys1 :: number',
+  result: null,
+  time: 1,
+  code: 'pickKeys(number1, ["a", "c"])',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMobnVtYmVyMSwgW1wiYVwiLCBcImNcIl0pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoibnVtYmVyMSIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbeyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJhIiwibG9jYXRpb24iOlsxOSwyMl19LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYyIsImxvY2F0aW9uIjpbMjQsMjddfV0sImxvY2F0aW9uIjpbMTgsMjhdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys(number1, ["a", "c"]), php
+{ error: null, result: null, time: 0 }
+      33) pickKeys(number1, ["a", "c"]), node
+{
+  error: 'evaluate :: objectToArray1 :: string',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJG9iamVjdFRvQXJyYXkgcmVxdWlyZXMgYSBkb2N1bWVudCBpbnB1dCwgZm91bmQ6IHN0cmluZw=='
+}
+      34) pickKeys(string1, ["a", "c"]), mongo
+{
+  error: 'evaluate :: pickKeys1 :: string',
+  result: null,
+  time: 1,
+  code: 'pickKeys(string1, ["a", "c"])',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoc3RyaW5nMSwgW1wiYVwiLCBcImNcIl0pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoic3RyaW5nMSIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbeyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJhIiwibG9jYXRpb24iOlsxOSwyMl19LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYyIsImxvY2F0aW9uIjpbMjQsMjddfV0sImxvY2F0aW9uIjpbMTgsMjhdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys(string1, ["a", "c"]), php
+{ error: null, result: null, time: 1 }
+      35) pickKeys(string1, ["a", "c"]), node
+{
+  error: 'evaluate :: objectToArray1 :: array',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJG9iamVjdFRvQXJyYXkgcmVxdWlyZXMgYSBkb2N1bWVudCBpbnB1dCwgZm91bmQ6IGFycmF5'
+}
+      36) pickKeys(array1, ["a", "c"]), mongo
+{
+  error: 'evaluate :: pickKeys1 :: array',
+  result: null,
+  time: 1,
+  code: 'pickKeys(array1, ["a", "c"])',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoYXJyYXkxLCBbXCJhXCIsIFwiY1wiXSkiLCJzb3VyY2UiOnsidHlwZSI6IkNhbGxFeHByZXNzaW9uIiwiYXJndW1lbnRzIjpbeyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJhcnJheTEiLCJsb2NhdGlvbiI6WzksMTVdfSx7InR5cGUiOiJBcnJheUV4cHJlc3Npb24iLCJlbGVtZW50cyI6W3sidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYSIsImxvY2F0aW9uIjpbMTgsMjFdfSx7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImMiLCJsb2NhdGlvbiI6WzIzLDI2XX1dLCJsb2NhdGlvbiI6WzE3LDI3XX1dLCJjYWxsZWUiOiJwaWNrS2V5cyIsImxvY2F0aW9uIjpbMCw4XX0sImVycm9yIjpudWxsfQ== eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys(array1, ["a", "c"]), php
+{ error: null, result: null, time: 0 }
+      37) pickKeys(array1, ["a", "c"]), node
+{
+  error: 'evaluate :: in1 :: number',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogaW50'
+}
+      38) pickKeys(object2, number1), mongo
+{
+  error: 'evaluate :: pickKeys2 :: number',
+  result: null,
+  time: 0,
+  code: 'pickKeys(object2, number1)',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgbnVtYmVyMSkiLCJzb3VyY2UiOnsidHlwZSI6IkNhbGxFeHByZXNzaW9uIiwiYXJndW1lbnRzIjpbeyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJvYmplY3QyIiwibG9jYXRpb24iOls5LDE2XX0seyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJudW1iZXIxIiwibG9jYXRpb24iOlsxOCwyNV19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys(object2, number1), php
+{ error: 'evaluate :: pickKeys2 :: number', result: null, time: 0 }
+      ✔ pickKeys(object2, number1), node
+{
+  error: 'evaluate :: in1 :: string',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogc3RyaW5n'
+}
+      39) pickKeys(object2, string1), mongo
+{
+  error: 'evaluate :: pickKeys2 :: string',
+  result: null,
+  time: 0,
+  code: 'pickKeys(object2, string1)',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0Miwgc3RyaW5nMSkiLCJzb3VyY2UiOnsidHlwZSI6IkNhbGxFeHByZXNzaW9uIiwiYXJndW1lbnRzIjpbeyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJvYmplY3QyIiwibG9jYXRpb24iOls5LDE2XX0seyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJzdHJpbmcxIiwibG9jYXRpb24iOlsxOCwyNV19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys(object2, string1), php
+{ error: 'evaluate :: pickKeys2 :: string', result: null, time: 0 }
+      ✔ pickKeys(object2, string1), node
+{
+  error: 'evaluate :: in1 :: object',
+  result: null,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogb2JqZWN0'
+}
+      40) pickKeys(object2, object1), mongo
+{
+  error: 'evaluate :: pickKeys2 :: object',
+  result: null,
+  time: 0,
+  code: 'pickKeys(object2, object1)',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0Miwgb2JqZWN0MSkiLCJzb3VyY2UiOnsidHlwZSI6IkNhbGxFeHByZXNzaW9uIiwiYXJndW1lbnRzIjpbeyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJvYmplY3QyIiwibG9jYXRpb24iOls5LDE2XX0seyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJvYmplY3QxIiwibG9jYXRpb24iOlsxOCwyNV19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys(object2, object1), php
+{ error: 'evaluate :: pickKeys2 :: object', result: null, time: 0 }
+      ✔ pickKeys(object2, object1), node
+{
+  error: null,
+  result: { a: 1, c: 3 },
+  time: 4,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php toMongoExpression eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgW1wiYVwiLCBcImNcIl0pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoib2JqZWN0MiIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbeyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJhIiwibG9jYXRpb24iOlsxOSwyMl19LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYyIsImxvY2F0aW9uIjpbMjQsMjddfV0sImxvY2F0aW9uIjpbMTgsMjhdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys(object2, ["a", "c"]), mongo
+{
+  error: null,
+  result: { a: 1, c: 3 },
+  time: 1,
+  code: 'pickKeys(object2, ["a", "c"])',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgW1wiYVwiLCBcImNcIl0pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoib2JqZWN0MiIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbeyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJhIiwibG9jYXRpb24iOlsxOSwyMl19LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYyIsImxvY2F0aW9uIjpbMjQsMjddfV0sImxvY2F0aW9uIjpbMTgsMjhdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys(object2, ["a", "c"]), php
+{ error: null, result: { a: 1, c: 3 }, time: 0 }
+      ✔ pickKeys(object2, ["a", "c"]), node
+{
+  error: null,
+  result: { a: 1, c: 3 },
+  time: 3,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php toMongoExpression eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgW1wiYVwiLCBcImNcIiwgXCJlXCJdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJJZGVudGlmaWVyIiwiY29sdW1uIjpmYWxzZSwibmFtZSI6Im9iamVjdDIiLCJsb2NhdGlvbiI6WzksMTZdfSx7InR5cGUiOiJBcnJheUV4cHJlc3Npb24iLCJlbGVtZW50cyI6W3sidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYSIsImxvY2F0aW9uIjpbMTksMjJdfSx7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImMiLCJsb2NhdGlvbiI6WzI0LDI3XX0seyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJlIiwibG9jYXRpb24iOlsyOSwzMl19XSwibG9jYXRpb24iOlsxOCwzM119XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys(object2, ["a", "c", "e"]), mongo
+{
+  error: null,
+  result: { a: 1, c: 3 },
+  time: 1,
+  code: 'pickKeys(object2, ["a", "c", "e"])',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgW1wiYVwiLCBcImNcIiwgXCJlXCJdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJJZGVudGlmaWVyIiwiY29sdW1uIjpmYWxzZSwibmFtZSI6Im9iamVjdDIiLCJsb2NhdGlvbiI6WzksMTZdfSx7InR5cGUiOiJBcnJheUV4cHJlc3Npb24iLCJlbGVtZW50cyI6W3sidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYSIsImxvY2F0aW9uIjpbMTksMjJdfSx7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImMiLCJsb2NhdGlvbiI6WzI0LDI3XX0seyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJlIiwibG9jYXRpb24iOlsyOSwzMl19XSwibG9jYXRpb24iOlsxOCwzM119XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys(object2, ["a", "c", "e"]), php
+{ error: null, result: { a: 1, c: 3 }, time: 0 }
+      ✔ pickKeys(object2, ["a", "c", "e"]), node
+{
+  error: null,
+  result: {},
+  time: 3,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php toMongoExpression eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgW10pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoib2JqZWN0MiIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbXSwibG9jYXRpb24iOlsxOCwyMF19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys(object2, []), mongo
+{
+  error: null,
+  result: {},
+  time: 1,
+  code: 'pickKeys(object2, [])',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgW10pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoib2JqZWN0MiIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbXSwibG9jYXRpb24iOlsxOCwyMF19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys(object2, []), php
+{ error: null, result: {}, time: 0 }
+      ✔ pickKeys(object2, []), node
+{
+  error: null,
+  result: {},
+  time: 3,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php toMongoExpression eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoe30sIFtcImFcIiwgXCJjXCJdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJPYmplY3RFeHByZXNzaW9uIiwicHJvcGVydGllcyI6W10sImxvY2F0aW9uIjpbOSwxMV19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbeyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJhIiwibG9jYXRpb24iOlsxNCwxN119LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYyIsImxvY2F0aW9uIjpbMTksMjJdfV0sImxvY2F0aW9uIjpbMTMsMjNdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys({}, ["a", "c"]), mongo
+{
+  error: null,
+  result: {},
+  time: 1,
+  code: 'pickKeys({}, ["a", "c"])',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoe30sIFtcImFcIiwgXCJjXCJdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJPYmplY3RFeHByZXNzaW9uIiwicHJvcGVydGllcyI6W10sImxvY2F0aW9uIjpbOSwxMV19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbeyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJhIiwibG9jYXRpb24iOlsxNCwxN119LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYyIsImxvY2F0aW9uIjpbMTksMjJdfV0sImxvY2F0aW9uIjpbMTMsMjNdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys({}, ["a", "c"]), php
+{ error: null, result: {}, time: 1 }
+      ✔ pickKeys({}, ["a", "c"]), node
+{
+  error: null,
+  result: {},
+  time: 2,
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php toMongoExpression eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoe30sIFtdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJPYmplY3RFeHByZXNzaW9uIiwicHJvcGVydGllcyI6W10sImxvY2F0aW9uIjpbOSwxMV19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbXSwibG9jYXRpb24iOlsxMywxNV19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys({}, []), mongo
+{
+  error: null,
+  result: {},
+  time: 1,
+  code: 'pickKeys({}, [])',
+  command: '/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoe30sIFtdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJPYmplY3RFeHByZXNzaW9uIiwicHJvcGVydGllcyI6W10sImxvY2F0aW9uIjpbOSwxMV19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbXSwibG9jYXRpb24iOlsxMywxNV19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'
+}
+      ✔ pickKeys({}, []), php
+{ error: null, result: {}, time: 0 }
+      ✔ pickKeys({}, []), node
+
+
+  29 passing (3s)
+  40 failing
+
+  1) specification
+       pickKeys()
+         pickKeys(1, ["a", "c"]), mongo:
+
+      AssertionError: Different error from {"error":"optimize :: objectToArray1 :: number","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogaW50"}
+      + expected - actual
+
+      -optimize :: objectToArray1 :: number
+      +optimize :: pickKeys1 :: number
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  2) specification
+       pickKeys()
+         pickKeys(1, ["a", "c"]), node:
+     AssertionError: expected null not to be null (false negative fail)
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:368:17)
+      at Context.<anonymous> (test/specification.test.js:45:68)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  3) specification
+       pickKeys()
+         pickKeys(Infinity, ["a", "c"]), mongo:
+
+      AssertionError: Different error from {"error":"optimize :: objectToArray1 :: number","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogZG91Ymxl"}
+      + expected - actual
+
+      -optimize :: objectToArray1 :: number
+      +optimize :: pickKeys1 :: number
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  4) specification
+       pickKeys()
+         pickKeys(Infinity, ["a", "c"]), node:
+     AssertionError: expected null not to be null (false negative fail)
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:368:17)
+      at Context.<anonymous> (test/specification.test.js:45:68)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  5) specification
+       pickKeys()
+         pickKeys(NaN, ["a", "c"]), mongo:
+
+      AssertionError: Different error from {"error":"optimize :: objectToArray1 :: number","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogZG91Ymxl"}
+      + expected - actual
+
+      -optimize :: objectToArray1 :: number
+      +optimize :: pickKeys1 :: number
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  6) specification
+       pickKeys()
+         pickKeys(NaN, ["a", "c"]), node:
+     AssertionError: expected null not to be null (false negative fail)
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:368:17)
+      at Context.<anonymous> (test/specification.test.js:45:68)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  7) specification
+       pickKeys()
+         pickKeys("a", ["a", "c"]), mongo:
+
+      AssertionError: Different error from {"error":"optimize :: objectToArray1 :: string","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogc3RyaW5n"}
+      + expected - actual
+
+      -optimize :: objectToArray1 :: string
+      +optimize :: pickKeys1 :: string
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  8) specification
+       pickKeys()
+         pickKeys("a", ["a", "c"]), node:
+     AssertionError: expected null not to be null (false negative fail)
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:368:17)
+      at Context.<anonymous> (test/specification.test.js:45:68)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  9) specification
+       pickKeys()
+         pickKeys([], ["a", "c"]), mongo:
+
+      AssertionError: Different error from {"error":"optimize :: objectToArray1 :: array","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogYXJyYXk="}
+      + expected - actual
+
+      -optimize :: objectToArray1 :: array
+      +optimize :: pickKeys1 :: string
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  10) specification
+       pickKeys()
+         pickKeys([], ["a", "c"]), php:
+
+      AssertionError: Different error from {"error":"optimize :: pickKeys1 :: array","result":null,"time":1,"code":"pickKeys([], [\"a\", \"c\"])","command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoW10sIFtcImFcIiwgXCJjXCJdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJBcnJheUV4cHJlc3Npb24iLCJlbGVtZW50cyI6W10sImxvY2F0aW9uIjpbOSwxMV19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbeyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJhIiwibG9jYXRpb24iOlsxNCwxN119LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYyIsImxvY2F0aW9uIjpbMTksMjJdfV0sImxvY2F0aW9uIjpbMTMsMjNdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19"}
+      + expected - actual
+
+      -optimize :: pickKeys1 :: array
+      +optimize :: pickKeys1 :: string
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  11) specification
+       pickKeys()
+         pickKeys([], ["a", "c"]), node:
+     AssertionError: expected null not to be null (false negative fail)
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:368:17)
+      at Context.<anonymous> (test/specification.test.js:45:68)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  12) specification
+       pickKeys()
+         pickKeys(true, ["a", "c"]), mongo:
+
+      AssertionError: Different error from {"error":"optimize :: objectToArray1 :: boolean","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogYm9vbA=="}
+      + expected - actual
+
+      -optimize :: objectToArray1 :: boolean
+      +optimize :: pickKeys1 :: boolean
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  13) specification
+       pickKeys()
+         pickKeys(true, ["a", "c"]), node:
+     AssertionError: expected null not to be null (false negative fail)
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:368:17)
+      at Context.<anonymous> (test/specification.test.js:45:68)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  14) specification
+       pickKeys()
+         pickKeys(object2, 1), mongo:
+
+      AssertionError: Different error from {"error":"evaluate :: in1 :: number","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogaW50"}
+      + expected - actual
+
+      -evaluate :: in1 :: number
+      +optimize :: pickKeys2 :: number
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  15) specification
+       pickKeys()
+         pickKeys(object2, 1), php:
+
+      AssertionError: Different error from {"error":"evaluate :: pickKeys2 :: number","result":null,"time":1,"code":"pickKeys(object2, 1)","command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgMSkiLCJzb3VyY2UiOnsidHlwZSI6IkNhbGxFeHByZXNzaW9uIiwiYXJndW1lbnRzIjpbeyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJvYmplY3QyIiwibG9jYXRpb24iOls5LDE2XX0seyJ0eXBlIjoiTnVtYmVyIiwidmFsdWUiOjEsImxvY2F0aW9uIjpbMTgsMTldfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19"}
+      + expected - actual
+
+      -evaluate :: pickKeys2 :: number
+      +optimize :: pickKeys2 :: number
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  16) specification
+       pickKeys()
+         pickKeys(object2, 1), node:
+
+      AssertionError: Different error from {"error":"evaluate :: pickKeys2 :: number","result":null,"time":1}
+      + expected - actual
+
+      -evaluate :: pickKeys2 :: number
+      +optimize :: pickKeys2 :: number
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  17) specification
+       pickKeys()
+         pickKeys(object2, Infinity), mongo:
+
+      AssertionError: Different error from {"error":"evaluate :: in1 :: number","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogZG91Ymxl"}
+      + expected - actual
+
+      -evaluate :: in1 :: number
+      +optimize :: pickKeys2 :: number
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  18) specification
+       pickKeys()
+         pickKeys(object2, Infinity), php:
+
+      AssertionError: Different error from {"error":"evaluate :: pickKeys2 :: number","result":null,"time":1,"code":"pickKeys(object2, Infinity)","command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgSW5maW5pdHkpIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoib2JqZWN0MiIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6Ik51bWJlciIsInZhbHVlIjoiSW5maW5pdHkiLCJsb2NhdGlvbiI6WzE4LDI2XX1dLCJjYWxsZWUiOiJwaWNrS2V5cyIsImxvY2F0aW9uIjpbMCw4XX0sImVycm9yIjpudWxsfQ== eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19"}
+      + expected - actual
+
+      -evaluate :: pickKeys2 :: number
+      +optimize :: pickKeys2 :: number
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  19) specification
+       pickKeys()
+         pickKeys(object2, Infinity), node:
+
+      AssertionError: Different error from {"error":"evaluate :: pickKeys2 :: number","result":null,"time":1}
+      + expected - actual
+
+      -evaluate :: pickKeys2 :: number
+      +optimize :: pickKeys2 :: number
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  20) specification
+       pickKeys()
+         pickKeys(object2, NaN), mongo:
+
+      AssertionError: Different error from {"error":"evaluate :: in1 :: number","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogZG91Ymxl"}
+      + expected - actual
+
+      -evaluate :: in1 :: number
+      +optimize :: pickKeys2 :: number
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  21) specification
+       pickKeys()
+         pickKeys(object2, NaN), php:
+
+      AssertionError: Different error from {"error":"evaluate :: pickKeys2 :: number","result":null,"time":1,"code":"pickKeys(object2, NaN)","command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgTmFOKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJJZGVudGlmaWVyIiwiY29sdW1uIjpmYWxzZSwibmFtZSI6Im9iamVjdDIiLCJsb2NhdGlvbiI6WzksMTZdfSx7InR5cGUiOiJOdW1iZXIiLCJ2YWx1ZSI6Ik5hTiIsImxvY2F0aW9uIjpbMTgsMjFdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19"}
+      + expected - actual
+
+      -evaluate :: pickKeys2 :: number
+      +optimize :: pickKeys2 :: number
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  22) specification
+       pickKeys()
+         pickKeys(object2, NaN), node:
+
+      AssertionError: Different error from {"error":"evaluate :: pickKeys2 :: number","result":null,"time":0}
+      + expected - actual
+
+      -evaluate :: pickKeys2 :: number
+      +optimize :: pickKeys2 :: number
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  23) specification
+       pickKeys()
+         pickKeys(object2, "a"), mongo:
+
+      AssertionError: Different error from {"error":"evaluate :: in1 :: string","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogc3RyaW5n"}
+      + expected - actual
+
+      -evaluate :: in1 :: string
+      +optimize :: pickKeys2 :: string
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  24) specification
+       pickKeys()
+         pickKeys(object2, "a"), php:
+
+      AssertionError: Different error from {"error":"evaluate :: pickKeys2 :: string","result":null,"time":1,"code":"pickKeys(object2, \"a\")","command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgXCJhXCIpIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoib2JqZWN0MiIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYSIsImxvY2F0aW9uIjpbMTgsMjFdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19"}
+      + expected - actual
+
+      -evaluate :: pickKeys2 :: string
+      +optimize :: pickKeys2 :: string
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  25) specification
+       pickKeys()
+         pickKeys(object2, "a"), node:
+
+      AssertionError: Different error from {"error":"evaluate :: pickKeys2 :: string","result":null,"time":0}
+      + expected - actual
+
+      -evaluate :: pickKeys2 :: string
+      +optimize :: pickKeys2 :: string
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  26) specification
+       pickKeys()
+         pickKeys(object2, {}), mongo:
+
+      AssertionError: Different error from {"error":"evaluate :: in1 :: object","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogb2JqZWN0"}
+      + expected - actual
+
+      -evaluate :: in1 :: object
+      +optimize :: pickKeys2 :: object
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  27) specification
+       pickKeys()
+         pickKeys(object2, {}), php:
+
+      AssertionError: Different error from {"error":"evaluate :: pickKeys2 :: object","result":null,"time":1,"code":"pickKeys(object2, {})","command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0Miwge30pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoib2JqZWN0MiIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6Ik9iamVjdEV4cHJlc3Npb24iLCJwcm9wZXJ0aWVzIjpbXSwibG9jYXRpb24iOlsxOCwyMF19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19"}
+      + expected - actual
+
+      -evaluate :: pickKeys2 :: object
+      +optimize :: pickKeys2 :: object
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  28) specification
+       pickKeys()
+         pickKeys(object2, {}), node:
+
+      AssertionError: Different error from {"error":"evaluate :: pickKeys2 :: object","result":null,"time":1}
+      + expected - actual
+
+      -evaluate :: pickKeys2 :: object
+      +optimize :: pickKeys2 :: object
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  29) specification
+       pickKeys()
+         pickKeys(object2, true), mongo:
+
+      AssertionError: Different error from {"error":"evaluate :: in1 :: boolean","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogYm9vbA=="}
+      + expected - actual
+
+      -evaluate :: in1 :: boolean
+      +optimize :: pickKeys2 :: 
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  30) specification
+       pickKeys()
+         pickKeys(object2, true), php:
+
+      AssertionError: Different error from {"error":"evaluate :: pickKeys2 :: boolean","result":null,"time":1,"code":"pickKeys(object2, true)","command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgdHJ1ZSkiLCJzb3VyY2UiOnsidHlwZSI6IkNhbGxFeHByZXNzaW9uIiwiYXJndW1lbnRzIjpbeyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJvYmplY3QyIiwibG9jYXRpb24iOls5LDE2XX0seyJ0eXBlIjoiQm9vbGVhbiIsInZhbHVlIjp0cnVlLCJsb2NhdGlvbiI6WzE4LDIyXX1dLCJjYWxsZWUiOiJwaWNrS2V5cyIsImxvY2F0aW9uIjpbMCw4XX0sImVycm9yIjpudWxsfQ== eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19"}
+      + expected - actual
+
+      -evaluate :: pickKeys2 :: boolean
+      +optimize :: pickKeys2 :: 
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  31) specification
+       pickKeys()
+         pickKeys(object2, true), node:
+
+      AssertionError: Different error from {"error":"evaluate :: pickKeys2 :: boolean","result":null,"time":0}
+      + expected - actual
+
+      -evaluate :: pickKeys2 :: boolean
+      +optimize :: pickKeys2 :: 
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  32) specification
+       pickKeys()
+         pickKeys(number1, ["a", "c"]), mongo:
+
+      AssertionError: Different error from {"error":"evaluate :: objectToArray1 :: number","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJG9iamVjdFRvQXJyYXkgcmVxdWlyZXMgYSBkb2N1bWVudCBpbnB1dCwgZm91bmQ6IGludA=="}
+      + expected - actual
+
+      -evaluate :: objectToArray1 :: number
+      +evaluate :: pickKeys1 :: number
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  33) specification
+       pickKeys()
+         pickKeys(number1, ["a", "c"]), node:
+     AssertionError: expected null not to be null (false negative fail)
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:368:17)
+      at Context.<anonymous> (test/specification.test.js:45:68)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  34) specification
+       pickKeys()
+         pickKeys(string1, ["a", "c"]), mongo:
+
+      AssertionError: Different error from {"error":"evaluate :: objectToArray1 :: string","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJG9iamVjdFRvQXJyYXkgcmVxdWlyZXMgYSBkb2N1bWVudCBpbnB1dCwgZm91bmQ6IHN0cmluZw=="}
+      + expected - actual
+
+      -evaluate :: objectToArray1 :: string
+      +evaluate :: pickKeys1 :: string
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  35) specification
+       pickKeys()
+         pickKeys(string1, ["a", "c"]), node:
+     AssertionError: expected null not to be null (false negative fail)
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:368:17)
+      at Context.<anonymous> (test/specification.test.js:45:68)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  36) specification
+       pickKeys()
+         pickKeys(array1, ["a", "c"]), mongo:
+
+      AssertionError: Different error from {"error":"evaluate :: objectToArray1 :: array","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJG9iamVjdFRvQXJyYXkgcmVxdWlyZXMgYSBkb2N1bWVudCBpbnB1dCwgZm91bmQ6IGFycmF5"}
+      + expected - actual
+
+      -evaluate :: objectToArray1 :: array
+      +evaluate :: pickKeys1 :: array
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  37) specification
+       pickKeys()
+         pickKeys(array1, ["a", "c"]), node:
+     AssertionError: expected null not to be null (false negative fail)
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:368:17)
+      at Context.<anonymous> (test/specification.test.js:45:68)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  38) specification
+       pickKeys()
+         pickKeys(object2, number1), mongo:
+
+      AssertionError: Different error from {"error":"evaluate :: in1 :: number","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogaW50"}
+      + expected - actual
+
+      -evaluate :: in1 :: number
+      +evaluate :: pickKeys2 :: number
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  39) specification
+       pickKeys()
+         pickKeys(object2, string1), mongo:
+
+      AssertionError: Different error from {"error":"evaluate :: in1 :: string","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogc3RyaW5n"}
+      + expected - actual
+
+      -evaluate :: in1 :: string
+      +evaluate :: pickKeys2 :: string
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  40) specification
+       pickKeys()
+         pickKeys(object2, object1), mongo:
+
+      AssertionError: Different error from {"error":"evaluate :: in1 :: object","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogb2JqZWN0"}
+      + expected - actual
+
+      -evaluate :: in1 :: object
+      +evaluate :: pickKeys2 :: object
+      
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+
+
+

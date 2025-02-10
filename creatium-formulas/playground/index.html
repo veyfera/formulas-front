@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playground</title>
+    <script src="../node_modules/codemirror/lib/codemirror.js"></script>
+    <script src="../node_modules/codemirror/mode/javascript/javascript.js"></script>
+    <script src="../node_modules/codemirror/addon/scroll/simplescrollbars.js"></script>
+    <link rel="stylesheet" href="../node_modules/codemirror/addon/scroll/simplescrollbars.css">
+    <link rel="stylesheet" href="../node_modules/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="../editor/editor.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .panel {
+            position: fixed;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid silver;
+        }
+
+        .panel-formula {
+            left: 0;
+            top: 0;
+            width: 30%;
+            height: 50%;
+        }
+
+        .panel-scope {
+            left: 0;
+            top: 50%;
+            width: 30%;
+            height: 50%;
+        }
+
+        .panel-mongo-raw {
+            left: 30%;
+            top: 0;
+            width: 35%;
+            height: 30%;
+        }
+
+        .panel-mongo-preeval {
+            left: 30%;
+            top: 30%;
+            width: 35%;
+            height: 30%;
+        }
+
+        .panel-ast {
+            left: 30%;
+            top: 60%;
+            width: 35%;
+            height: 50%;
+        }
+
+        .panel-result {
+            left: 65%;
+            top: 0;
+            width: 35%;
+            height: 33%;
+        }
+
+        .panel-print {
+            left: 65%;
+            top: 33%;
+            width: 35%;
+            height: 33%;
+        }
+
+        .panel-analyzer {
+            left: 65%;
+            top: 66%;
+            width: 35%;
+            height: 34%;
+        }
+
+        .title {
+            width: 100%;
+            padding: 0 10px;
+            background: whitesmoke;
+            font-family: sans-serif;
+            height: 40px;
+            line-height: 40px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .editor {
+            padding-top: 40px;
+        }
+
+        .editor {
+            display: flex;
+            flex-grow: 1;
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        .CodeMirror {
+            flex-grow: 1;
+            max-height: 100%;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+<div class="panel panel-formula">
+    <div class="title">
+        Formula
+
+        <button id="toggle_analyze">Analyze</button>
+    </div>
+    <div class="editor">
+        <expression-editor lang="ru" id="input_formula" value="" />
+    </div>
+</div>
+<div class="panel panel-scope">
+    <div class="title">
+        JSON Scope
+    </div>
+    <div class="editor">
+        <textarea id="input_scope"></textarea>
+    </div>
+</div>
+<div class="panel panel-mongo-raw">
+    <div class="title">
+        MongoDB Expression Raw
+    </div>
+    <div class="editor">
+        <textarea id="output_mongo_raw"></textarea>
+    </div>
+</div>
+<div class="panel panel-mongo-preeval">
+    <div class="title">
+        MongoDB Expression preEvaluated
+    </div>
+    <div class="editor">
+        <textarea id="output_mongo_preeval"></textarea>
+    </div>
+</div>
+<div class="panel panel-ast">
+    <div class="title">
+        Syntax Tree
+    </div>
+    <div class="editor">
+        <textarea id="output_ast"></textarea>
+    </div>
+</div>
+<div class="panel panel-result">
+    <div class="title">
+        Result
+    </div>
+    <div class="editor">
+        <textarea id="output_result"></textarea>
+    </div>
+</div>
+<div class="panel panel-print">
+    <div class="title">
+        Pretty Print
+    </div>
+    <div class="editor">
+        <expression-scope-viewer copyable id="output_print"></expression-scope-viewer>
+    </div>
+</div>
+<div class="panel panel-analyzer">
+    <div class="title">
+        Analyzer
+    </div>
+    <div class="editor">
+        <textarea id="output_analyzer"></textarea>
+    </div>
+</div>
+<script type="module">
+    import { Expression, parseExpression, ExpressionEditorElement, ExpressionScopeViewerElement, ExpressionAnalyzer } from '../dist/editor.js';
+    ExpressionEditorElement.define(CodeMirror);
+    ExpressionScopeViewerElement.define();
+
+    window.cm_scope = CodeMirror.fromTextArea(input_scope, {
+        mode: { name: "javascript", json: true },
+        indentUnit: 2,
+        tabSize: 2,
+    });
+    window.cm_scope.setSize('100%', '100%');
+    window.cm_scope.setValue(localStorage.getItem('scope') || '');
+
+    window.cm_mongo_raw = CodeMirror.fromTextArea(output_mongo_raw, {
+        mode: { name: "javascript", json: true },
+        indentUnit: 2,
+        tabSize: 2,
+        readOnly: true ,
+    });
+    window.cm_mongo_raw.setSize('100%', '100%');
+
+    window.cm_mongo_preeval = CodeMirror.fromTextArea(output_mongo_preeval, {
+        mode: { name: "javascript", json: true },
+        indentUnit: 2,
+        tabSize: 2,
+        readOnly: true ,
+    });
+    window.cm_mongo_preeval.setSize('100%', '100%');
+
+    window.cm_ast = CodeMirror.fromTextArea(output_ast, {
+        mode: { name: "javascript", json: true },
+        indentUnit: 2,
+        tabSize: 2,
+        readOnly: true,
+    });
+    window.cm_ast.setSize('100%', '100%');
+
+    window.cm_formula = input_formula.cm;
+    window.cm_formula.setValue(localStorage.getItem('formula') || '');
+
+    window.cm_result = CodeMirror.fromTextArea(output_result, {
+        mode: { name: "javascript", json: true },
+        indentUnit: 2,
+        tabSize: 2,
+        readOnly: true,
+    });
+    window.cm_result.setSize('100%', '100%');
+
+    window.cm_analyzer = CodeMirror.fromTextArea(output_analyzer, {
+        mode: { name: "javascript", json: true },
+        indentUnit: 2,
+        tabSize: 2,
+        readOnly: true,
+    });
+    window.cm_analyzer.setSize('100%', '100%');
+
+    window.cm_scope.on('change', evaluate);
+    window.cm_formula.on('change', evaluate);
+
+    let running = false, delayed = false, analyzing = false;
+
+    window.toggle_analyze.onclick = function () {
+        if (analyzing) {
+            input_formula.disableAnalyzer();
+            evaluate();
+
+            window.toggle_analyze.innerText = 'Analyze';
+            analyzing = false;
+        } else {
+            const analyzer_result = ExpressionAnalyzer.evaluate(parseExpression(cm_formula.getDoc().getValue()), JSON.parse(cm_scope.getDoc().getValue()));
+            input_formula.enableAnalyzer(analyzer_result, function (logs) {
+                cm_analyzer.getDoc().setValue(
+                    JSON.stringify(logs, null, 2)
+                );
+            });
+
+            window.toggle_analyze.innerText = 'Editing';
+            analyzing = true;
+        }
+    };
+
+    input_formula.evaluate(JSON.parse(window.cm_scope.getValue()));
+
+    function evaluate() {
+        if (running) {
+            delayed = true;
+            return;
+        }
+
+        localStorage.setItem('formula', window.cm_formula.getValue());
+        localStorage.setItem('scope', window.cm_scope.getValue());
+
+        input_formula.evaluate(JSON.parse(window.cm_scope.getValue()));
+
+        delayed = false;
+
+        cm_mongo_raw.getDoc().setValue('Loading...');
+        cm_mongo_preeval.getDoc().setValue('Loading...');
+        cm_ast.getDoc().setValue('Loading...');
+        cm_result.getDoc().setValue('Loading...');
+        output_print.value = null;
+
+        running = true;
+        fetch('/evaluate', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                scope: cm_scope.getDoc().getValue(),
+                formula: cm_formula.getDoc().getValue()
+            }),
+        }).then(async (response) => {
+            running = false;
+
+            const output = await response.json();
+
+            if (output.error) {
+                cm_mongo_raw.getDoc().setValue('');
+                cm_mongo_preeval.getDoc().setValue('');
+                cm_ast.getDoc().setValue('');
+
+                cm_result.getDoc().setValue(output.error);
+                output_print.value = null;
+            } else {
+                cm_mongo_raw.getDoc().setValue(
+                    JSON.stringify(output.mongoExpression1.error || output.mongoExpression1.result, null, 2)
+                );
+
+                cm_mongo_preeval.getDoc().setValue(
+                    JSON.stringify(output.mongoExpression2.error || output.mongoExpression2.result, null, 2)
+                );
+
+                cm_ast.getDoc().setValue(
+                    JSON.stringify(output.ast, null, 2)
+                );
+
+                cm_result.getDoc().setValue(
+                    JSON.stringify(output.results, null, 2)
+                );
+
+                output_print.value = Expression.decodeTypes(output.result);
+
+                const analyzer_result = ExpressionAnalyzer.evaluate(parseExpression(cm_formula.getDoc().getValue()), JSON.parse(cm_scope.getDoc().getValue()));
+                cm_analyzer.getDoc().setValue(
+                    JSON.stringify(analyzer_result, null, 2)
+                );
+            }
+
+            if (delayed) evaluate();
+        });
+    }
+
+    evaluate();
+</script>
+</body>
+</html>

@@ -1,0 +1,661 @@
+Script started on 2025-02-05 08:06:57-05:00 [COMMAND="npm run test-specification" TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="190" LINES="49"]
+
+> creatium-formulas@1.36.0 test-specification
+> mocha --ui bdd test/specification.test.js
+
+
+[0m[0m
+[0m  specification[0m
+[0m    pickKeys()[0m
+{
+  error: [32m'optimize :: objectToArray1 :: number'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogaW50'[39m
+}
+    [31m  1) pickKeys(1, ["a", "c"]), mongo[0m
+{
+  error: [32m'optimize :: pickKeys1 :: number'[39m,
+  result: [1mnull[22m,
+  time: [33m1[39m,
+  code: [32m'pickKeys(1, ["a", "c"])'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoMSwgW1wiYVwiLCBcImNcIl0pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6Ik51bWJlciIsInZhbHVlIjoxLCJsb2NhdGlvbiI6WzksMTBdfSx7InR5cGUiOiJBcnJheUV4cHJlc3Npb24iLCJlbGVtZW50cyI6W3sidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYSIsImxvY2F0aW9uIjpbMTMsMTZdfSx7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImMiLCJsb2NhdGlvbiI6WzE4LDIxXX1dLCJsb2NhdGlvbiI6WzEyLDIyXX1dLCJjYWxsZWUiOiJwaWNrS2V5cyIsImxvY2F0aW9uIjpbMCw4XX0sImVycm9yIjpudWxsfQ== eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(1, ["a", "c"]), php[0m
+{ error: [32m'optimize :: pickKeys1 :: number'[39m, result: [1mnull[22m, time: [33m2[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(1, ["a", "c"]), node[0m
+{
+  error: [32m'optimize :: objectToArray1 :: number'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogZG91Ymxl'[39m
+}
+    [31m  2) pickKeys(Infinity, ["a", "c"]), mongo[0m
+{
+  error: [32m'optimize :: pickKeys1 :: number'[39m,
+  result: [1mnull[22m,
+  time: [33m1[39m,
+  code: [32m'pickKeys(Infinity, ["a", "c"])'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoSW5maW5pdHksIFtcImFcIiwgXCJjXCJdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJOdW1iZXIiLCJ2YWx1ZSI6IkluZmluaXR5IiwibG9jYXRpb24iOls5LDE3XX0seyJ0eXBlIjoiQXJyYXlFeHByZXNzaW9uIiwiZWxlbWVudHMiOlt7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImEiLCJsb2NhdGlvbiI6WzIwLDIzXX0seyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJjIiwibG9jYXRpb24iOlsyNSwyOF19XSwibG9jYXRpb24iOlsxOSwyOV19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(Infinity, ["a", "c"]), php[0m
+{ error: [32m'optimize :: pickKeys1 :: number'[39m, result: [1mnull[22m, time: [33m0[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(Infinity, ["a", "c"]), node[0m
+{
+  error: [32m'optimize :: objectToArray1 :: number'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogZG91Ymxl'[39m
+}
+    [31m  3) pickKeys(NaN, ["a", "c"]), mongo[0m
+{
+  error: [32m'optimize :: pickKeys1 :: number'[39m,
+  result: [1mnull[22m,
+  time: [33m1[39m,
+  code: [32m'pickKeys(NaN, ["a", "c"])'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoTmFOLCBbXCJhXCIsIFwiY1wiXSkiLCJzb3VyY2UiOnsidHlwZSI6IkNhbGxFeHByZXNzaW9uIiwiYXJndW1lbnRzIjpbeyJ0eXBlIjoiTnVtYmVyIiwidmFsdWUiOiJOYU4iLCJsb2NhdGlvbiI6WzksMTJdfSx7InR5cGUiOiJBcnJheUV4cHJlc3Npb24iLCJlbGVtZW50cyI6W3sidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYSIsImxvY2F0aW9uIjpbMTUsMThdfSx7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImMiLCJsb2NhdGlvbiI6WzIwLDIzXX1dLCJsb2NhdGlvbiI6WzE0LDI0XX1dLCJjYWxsZWUiOiJwaWNrS2V5cyIsImxvY2F0aW9uIjpbMCw4XX0sImVycm9yIjpudWxsfQ== eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(NaN, ["a", "c"]), php[0m
+{ error: [32m'optimize :: pickKeys1 :: number'[39m, result: [1mnull[22m, time: [33m0[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(NaN, ["a", "c"]), node[0m
+{
+  error: [32m'optimize :: objectToArray1 :: string'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogc3RyaW5n'[39m
+}
+    [31m  4) pickKeys("a", ["a", "c"]), mongo[0m
+{
+  error: [32m'optimize :: pickKeys1 :: string'[39m,
+  result: [1mnull[22m,
+  time: [33m1[39m,
+  code: [32m'pickKeys("a", ["a", "c"])'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoXCJhXCIsIFtcImFcIiwgXCJjXCJdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImEiLCJsb2NhdGlvbiI6WzksMTJdfSx7InR5cGUiOiJBcnJheUV4cHJlc3Npb24iLCJlbGVtZW50cyI6W3sidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYSIsImxvY2F0aW9uIjpbMTUsMThdfSx7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImMiLCJsb2NhdGlvbiI6WzIwLDIzXX1dLCJsb2NhdGlvbiI6WzE0LDI0XX1dLCJjYWxsZWUiOiJwaWNrS2V5cyIsImxvY2F0aW9uIjpbMCw4XX0sImVycm9yIjpudWxsfQ== eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys("a", ["a", "c"]), php[0m
+{ error: [32m'optimize :: pickKeys1 :: string'[39m, result: [1mnull[22m, time: [33m0[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys("a", ["a", "c"]), node[0m
+{
+  error: [32m'optimize :: objectToArray1 :: array'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogYXJyYXk='[39m
+}
+    [31m  5) pickKeys([], ["a", "c"]), mongo[0m
+{
+  error: [32m'optimize :: pickKeys1 :: array'[39m,
+  result: [1mnull[22m,
+  time: [33m1[39m,
+  code: [32m'pickKeys([], ["a", "c"])'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoW10sIFtcImFcIiwgXCJjXCJdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJBcnJheUV4cHJlc3Npb24iLCJlbGVtZW50cyI6W10sImxvY2F0aW9uIjpbOSwxMV19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbeyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJhIiwibG9jYXRpb24iOlsxNCwxN119LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYyIsImxvY2F0aW9uIjpbMTksMjJdfV0sImxvY2F0aW9uIjpbMTMsMjNdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys([], ["a", "c"]), php[0m
+{ error: [32m'optimize :: pickKeys1 :: array'[39m, result: [1mnull[22m, time: [33m0[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys([], ["a", "c"]), node[0m
+{
+  error: [32m'optimize :: objectToArray1 :: boolean'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogYm9vbA=='[39m
+}
+    [31m  6) pickKeys(true, ["a", "c"]), mongo[0m
+{
+  error: [32m'optimize :: pickKeys1 :: boolean'[39m,
+  result: [1mnull[22m,
+  time: [33m1[39m,
+  code: [32m'pickKeys(true, ["a", "c"])'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXModHJ1ZSwgW1wiYVwiLCBcImNcIl0pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IkJvb2xlYW4iLCJ2YWx1ZSI6dHJ1ZSwibG9jYXRpb24iOls5LDEzXX0seyJ0eXBlIjoiQXJyYXlFeHByZXNzaW9uIiwiZWxlbWVudHMiOlt7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImEiLCJsb2NhdGlvbiI6WzE2LDE5XX0seyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJjIiwibG9jYXRpb24iOlsyMSwyNF19XSwibG9jYXRpb24iOlsxNSwyNV19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(true, ["a", "c"]), php[0m
+{ error: [32m'optimize :: pickKeys1 :: boolean'[39m, result: [1mnull[22m, time: [33m0[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(true, ["a", "c"]), node[0m
+{
+  error: [32m'evaluate :: in1 :: number'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogaW50'[39m
+}
+    [31m  7) pickKeys(object2, 1), mongo[0m
+{
+  error: [32m'evaluate :: pickKeys2 :: number'[39m,
+  result: [1mnull[22m,
+  time: [33m1[39m,
+  code: [32m'pickKeys(object2, 1)'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgMSkiLCJzb3VyY2UiOnsidHlwZSI6IkNhbGxFeHByZXNzaW9uIiwiYXJndW1lbnRzIjpbeyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJvYmplY3QyIiwibG9jYXRpb24iOls5LDE2XX0seyJ0eXBlIjoiTnVtYmVyIiwidmFsdWUiOjEsImxvY2F0aW9uIjpbMTgsMTldfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, 1), php[0m
+{ error: [32m'evaluate :: pickKeys2 :: number'[39m, result: [1mnull[22m, time: [33m1[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, 1), node[0m
+{
+  error: [32m'evaluate :: in1 :: number'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogZG91Ymxl'[39m
+}
+    [31m  8) pickKeys(object2, Infinity), mongo[0m
+{
+  error: [32m'evaluate :: pickKeys2 :: number'[39m,
+  result: [1mnull[22m,
+  time: [33m1[39m,
+  code: [32m'pickKeys(object2, Infinity)'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgSW5maW5pdHkpIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoib2JqZWN0MiIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6Ik51bWJlciIsInZhbHVlIjoiSW5maW5pdHkiLCJsb2NhdGlvbiI6WzE4LDI2XX1dLCJjYWxsZWUiOiJwaWNrS2V5cyIsImxvY2F0aW9uIjpbMCw4XX0sImVycm9yIjpudWxsfQ== eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, Infinity), php[0m
+{ error: [32m'evaluate :: pickKeys2 :: number'[39m, result: [1mnull[22m, time: [33m1[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, Infinity), node[0m
+{
+  error: [32m'evaluate :: in1 :: number'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogZG91Ymxl'[39m
+}
+    [31m  9) pickKeys(object2, NaN), mongo[0m
+{
+  error: [32m'evaluate :: pickKeys2 :: number'[39m,
+  result: [1mnull[22m,
+  time: [33m1[39m,
+  code: [32m'pickKeys(object2, NaN)'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgTmFOKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJJZGVudGlmaWVyIiwiY29sdW1uIjpmYWxzZSwibmFtZSI6Im9iamVjdDIiLCJsb2NhdGlvbiI6WzksMTZdfSx7InR5cGUiOiJOdW1iZXIiLCJ2YWx1ZSI6Ik5hTiIsImxvY2F0aW9uIjpbMTgsMjFdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, NaN), php[0m
+{ error: [32m'evaluate :: pickKeys2 :: number'[39m, result: [1mnull[22m, time: [33m0[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, NaN), node[0m
+{
+  error: [32m'evaluate :: in1 :: string'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogc3RyaW5n'[39m
+}
+    [31m  10) pickKeys(object2, "a"), mongo[0m
+{
+  error: [32m'evaluate :: pickKeys2 :: string'[39m,
+  result: [1mnull[22m,
+  time: [33m1[39m,
+  code: [32m'pickKeys(object2, "a")'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgXCJhXCIpIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoib2JqZWN0MiIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYSIsImxvY2F0aW9uIjpbMTgsMjFdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, "a"), php[0m
+{ error: [32m'evaluate :: pickKeys2 :: string'[39m, result: [1mnull[22m, time: [33m1[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, "a"), node[0m
+{
+  error: [32m'evaluate :: in1 :: object'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogb2JqZWN0'[39m
+}
+    [31m  11) pickKeys(object2, {}), mongo[0m
+{
+  error: [32m'evaluate :: pickKeys2 :: object'[39m,
+  result: [1mnull[22m,
+  time: [33m1[39m,
+  code: [32m'pickKeys(object2, {})'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0Miwge30pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoib2JqZWN0MiIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6Ik9iamVjdEV4cHJlc3Npb24iLCJwcm9wZXJ0aWVzIjpbXSwibG9jYXRpb24iOlsxOCwyMF19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, {}), php[0m
+{ error: [32m'evaluate :: pickKeys2 :: object'[39m, result: [1mnull[22m, time: [33m1[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, {}), node[0m
+{
+  error: [32m'evaluate :: in1 :: boolean'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogYm9vbA=='[39m
+}
+    [31m  12) pickKeys(object2, true), mongo[0m
+{
+  error: [32m'evaluate :: pickKeys2 :: boolean'[39m,
+  result: [1mnull[22m,
+  time: [33m1[39m,
+  code: [32m'pickKeys(object2, true)'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgdHJ1ZSkiLCJzb3VyY2UiOnsidHlwZSI6IkNhbGxFeHByZXNzaW9uIiwiYXJndW1lbnRzIjpbeyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJvYmplY3QyIiwibG9jYXRpb24iOls5LDE2XX0seyJ0eXBlIjoiQm9vbGVhbiIsInZhbHVlIjp0cnVlLCJsb2NhdGlvbiI6WzE4LDIyXX1dLCJjYWxsZWUiOiJwaWNrS2V5cyIsImxvY2F0aW9uIjpbMCw4XX0sImVycm9yIjpudWxsfQ== eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, true), php[0m
+{ error: [32m'evaluate :: pickKeys2 :: boolean'[39m, result: [1mnull[22m, time: [33m0[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, true), node[0m
+{
+  error: [32m'evaluate :: objectToArray1 :: number'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJG9iamVjdFRvQXJyYXkgcmVxdWlyZXMgYSBkb2N1bWVudCBpbnB1dCwgZm91bmQ6IGludA=='[39m
+}
+    [31m  13) pickKeys(number1, ["a", "c"]), mongo[0m
+{
+  error: [32m'evaluate :: pickKeys1 :: number'[39m,
+  result: [1mnull[22m,
+  time: [33m1[39m,
+  code: [32m'pickKeys(number1, ["a", "c"])'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMobnVtYmVyMSwgW1wiYVwiLCBcImNcIl0pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoibnVtYmVyMSIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbeyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJhIiwibG9jYXRpb24iOlsxOSwyMl19LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYyIsImxvY2F0aW9uIjpbMjQsMjddfV0sImxvY2F0aW9uIjpbMTgsMjhdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(number1, ["a", "c"]), php[0m
+{ error: [32m'evaluate :: pickKeys1 :: number'[39m, result: [1mnull[22m, time: [33m0[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(number1, ["a", "c"]), node[0m
+{
+  error: [32m'evaluate :: objectToArray1 :: string'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJG9iamVjdFRvQXJyYXkgcmVxdWlyZXMgYSBkb2N1bWVudCBpbnB1dCwgZm91bmQ6IHN0cmluZw=='[39m
+}
+    [31m  14) pickKeys(string1, ["a", "c"]), mongo[0m
+{
+  error: [32m'evaluate :: pickKeys1 :: string'[39m,
+  result: [1mnull[22m,
+  time: [33m1[39m,
+  code: [32m'pickKeys(string1, ["a", "c"])'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoc3RyaW5nMSwgW1wiYVwiLCBcImNcIl0pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoic3RyaW5nMSIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbeyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJhIiwibG9jYXRpb24iOlsxOSwyMl19LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYyIsImxvY2F0aW9uIjpbMjQsMjddfV0sImxvY2F0aW9uIjpbMTgsMjhdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(string1, ["a", "c"]), php[0m
+{ error: [32m'evaluate :: pickKeys1 :: string'[39m, result: [1mnull[22m, time: [33m1[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(string1, ["a", "c"]), node[0m
+{
+  error: [32m'evaluate :: objectToArray1 :: array'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJG9iamVjdFRvQXJyYXkgcmVxdWlyZXMgYSBkb2N1bWVudCBpbnB1dCwgZm91bmQ6IGFycmF5'[39m
+}
+    [31m  15) pickKeys(array1, ["a", "c"]), mongo[0m
+{
+  error: [32m'evaluate :: pickKeys1 :: array'[39m,
+  result: [1mnull[22m,
+  time: [33m1[39m,
+  code: [32m'pickKeys(array1, ["a", "c"])'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoYXJyYXkxLCBbXCJhXCIsIFwiY1wiXSkiLCJzb3VyY2UiOnsidHlwZSI6IkNhbGxFeHByZXNzaW9uIiwiYXJndW1lbnRzIjpbeyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJhcnJheTEiLCJsb2NhdGlvbiI6WzksMTVdfSx7InR5cGUiOiJBcnJheUV4cHJlc3Npb24iLCJlbGVtZW50cyI6W3sidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYSIsImxvY2F0aW9uIjpbMTgsMjFdfSx7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImMiLCJsb2NhdGlvbiI6WzIzLDI2XX1dLCJsb2NhdGlvbiI6WzE3LDI3XX1dLCJjYWxsZWUiOiJwaWNrS2V5cyIsImxvY2F0aW9uIjpbMCw4XX0sImVycm9yIjpudWxsfQ== eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(array1, ["a", "c"]), php[0m
+{ error: [32m'evaluate :: pickKeys1 :: array'[39m, result: [1mnull[22m, time: [33m0[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(array1, ["a", "c"]), node[0m
+{
+  error: [32m'evaluate :: in1 :: number'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogaW50'[39m
+}
+    [31m  16) pickKeys(object2, number1), mongo[0m
+{
+  error: [32m'evaluate :: pickKeys2 :: number'[39m,
+  result: [1mnull[22m,
+  time: [33m0[39m,
+  code: [32m'pickKeys(object2, number1)'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgbnVtYmVyMSkiLCJzb3VyY2UiOnsidHlwZSI6IkNhbGxFeHByZXNzaW9uIiwiYXJndW1lbnRzIjpbeyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJvYmplY3QyIiwibG9jYXRpb24iOls5LDE2XX0seyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJudW1iZXIxIiwibG9jYXRpb24iOlsxOCwyNV19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, number1), php[0m
+{ error: [32m'evaluate :: pickKeys2 :: number'[39m, result: [1mnull[22m, time: [33m0[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, number1), node[0m
+{
+  error: [32m'evaluate :: in1 :: string'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogc3RyaW5n'[39m
+}
+    [31m  17) pickKeys(object2, string1), mongo[0m
+{
+  error: [32m'evaluate :: pickKeys2 :: string'[39m,
+  result: [1mnull[22m,
+  time: [33m0[39m,
+  code: [32m'pickKeys(object2, string1)'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0Miwgc3RyaW5nMSkiLCJzb3VyY2UiOnsidHlwZSI6IkNhbGxFeHByZXNzaW9uIiwiYXJndW1lbnRzIjpbeyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJvYmplY3QyIiwibG9jYXRpb24iOls5LDE2XX0seyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJzdHJpbmcxIiwibG9jYXRpb24iOlsxOCwyNV19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, string1), php[0m
+{ error: [32m'evaluate :: pickKeys2 :: string'[39m, result: [1mnull[22m, time: [33m1[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, string1), node[0m
+{
+  error: [32m'evaluate :: in1 :: object'[39m,
+  result: [1mnull[22m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogb2JqZWN0'[39m
+}
+    [31m  18) pickKeys(object2, object1), mongo[0m
+{
+  error: [32m'evaluate :: pickKeys2 :: object'[39m,
+  result: [1mnull[22m,
+  time: [33m0[39m,
+  code: [32m'pickKeys(object2, object1)'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0Miwgb2JqZWN0MSkiLCJzb3VyY2UiOnsidHlwZSI6IkNhbGxFeHByZXNzaW9uIiwiYXJndW1lbnRzIjpbeyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJvYmplY3QyIiwibG9jYXRpb24iOls5LDE2XX0seyJ0eXBlIjoiSWRlbnRpZmllciIsImNvbHVtbiI6ZmFsc2UsIm5hbWUiOiJvYmplY3QxIiwibG9jYXRpb24iOlsxOCwyNV19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, object1), php[0m
+{ error: [32m'evaluate :: pickKeys2 :: object'[39m, result: [1mnull[22m, time: [33m1[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, object1), node[0m
+{
+  error: [1mnull[22m,
+  result: { a: [33m1[39m, c: [33m3[39m },
+  time: [33m4[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php toMongoExpression eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgW1wiYVwiLCBcImNcIl0pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoib2JqZWN0MiIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbeyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJhIiwibG9jYXRpb24iOlsxOSwyMl19LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYyIsImxvY2F0aW9uIjpbMjQsMjddfV0sImxvY2F0aW9uIjpbMTgsMjhdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, ["a", "c"]), mongo[0m
+{
+  error: [1mnull[22m,
+  result: { a: [33m1[39m, c: [33m3[39m },
+  time: [33m1[39m,
+  code: [32m'pickKeys(object2, ["a", "c"])'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgW1wiYVwiLCBcImNcIl0pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoib2JqZWN0MiIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbeyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJhIiwibG9jYXRpb24iOlsxOSwyMl19LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYyIsImxvY2F0aW9uIjpbMjQsMjddfV0sImxvY2F0aW9uIjpbMTgsMjhdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, ["a", "c"]), php[0m
+{ error: [1mnull[22m, result: { a: [33m1[39m, c: [33m3[39m }, time: [33m0[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, ["a", "c"]), node[0m
+{
+  error: [1mnull[22m,
+  result: { a: [33m1[39m, c: [33m3[39m },
+  time: [33m3[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php toMongoExpression eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgW1wiYVwiLCBcImNcIiwgXCJlXCJdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJJZGVudGlmaWVyIiwiY29sdW1uIjpmYWxzZSwibmFtZSI6Im9iamVjdDIiLCJsb2NhdGlvbiI6WzksMTZdfSx7InR5cGUiOiJBcnJheUV4cHJlc3Npb24iLCJlbGVtZW50cyI6W3sidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYSIsImxvY2F0aW9uIjpbMTksMjJdfSx7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImMiLCJsb2NhdGlvbiI6WzI0LDI3XX0seyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJlIiwibG9jYXRpb24iOlsyOSwzMl19XSwibG9jYXRpb24iOlsxOCwzM119XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, ["a", "c", "e"]), mongo[0m
+{
+  error: [1mnull[22m,
+  result: { a: [33m1[39m, c: [33m3[39m },
+  time: [33m1[39m,
+  code: [32m'pickKeys(object2, ["a", "c", "e"])'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgW1wiYVwiLCBcImNcIiwgXCJlXCJdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJJZGVudGlmaWVyIiwiY29sdW1uIjpmYWxzZSwibmFtZSI6Im9iamVjdDIiLCJsb2NhdGlvbiI6WzksMTZdfSx7InR5cGUiOiJBcnJheUV4cHJlc3Npb24iLCJlbGVtZW50cyI6W3sidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYSIsImxvY2F0aW9uIjpbMTksMjJdfSx7InR5cGUiOiJTdHJpbmciLCJ2YWx1ZSI6ImMiLCJsb2NhdGlvbiI6WzI0LDI3XX0seyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJlIiwibG9jYXRpb24iOlsyOSwzMl19XSwibG9jYXRpb24iOlsxOCwzM119XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, ["a", "c", "e"]), php[0m
+{ error: [1mnull[22m, result: { a: [33m1[39m, c: [33m3[39m }, time: [33m0[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, ["a", "c", "e"]), node[0m
+{
+  error: [1mnull[22m,
+  result: {},
+  time: [33m2[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php toMongoExpression eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgW10pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoib2JqZWN0MiIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbXSwibG9jYXRpb24iOlsxOCwyMF19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, []), mongo[0m
+{
+  error: [1mnull[22m,
+  result: {},
+  time: [33m1[39m,
+  code: [32m'pickKeys(object2, [])'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMob2JqZWN0MiwgW10pIiwic291cmNlIjp7InR5cGUiOiJDYWxsRXhwcmVzc2lvbiIsImFyZ3VtZW50cyI6W3sidHlwZSI6IklkZW50aWZpZXIiLCJjb2x1bW4iOmZhbHNlLCJuYW1lIjoib2JqZWN0MiIsImxvY2F0aW9uIjpbOSwxNl19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbXSwibG9jYXRpb24iOlsxOCwyMF19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, []), php[0m
+{ error: [1mnull[22m, result: {}, time: [33m0[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys(object2, []), node[0m
+{
+  error: [1mnull[22m,
+  result: {},
+  time: [33m3[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php toMongoExpression eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoe30sIFtcImFcIiwgXCJjXCJdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJPYmplY3RFeHByZXNzaW9uIiwicHJvcGVydGllcyI6W10sImxvY2F0aW9uIjpbOSwxMV19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbeyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJhIiwibG9jYXRpb24iOlsxNCwxN119LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYyIsImxvY2F0aW9uIjpbMTksMjJdfV0sImxvY2F0aW9uIjpbMTMsMjNdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys({}, ["a", "c"]), mongo[0m
+{
+  error: [1mnull[22m,
+  result: {},
+  time: [33m1[39m,
+  code: [32m'pickKeys({}, ["a", "c"])'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoe30sIFtcImFcIiwgXCJjXCJdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJPYmplY3RFeHByZXNzaW9uIiwicHJvcGVydGllcyI6W10sImxvY2F0aW9uIjpbOSwxMV19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbeyJ0eXBlIjoiU3RyaW5nIiwidmFsdWUiOiJhIiwibG9jYXRpb24iOlsxNCwxN119LHsidHlwZSI6IlN0cmluZyIsInZhbHVlIjoiYyIsImxvY2F0aW9uIjpbMTksMjJdfV0sImxvY2F0aW9uIjpbMTMsMjNdfV0sImNhbGxlZSI6InBpY2tLZXlzIiwibG9jYXRpb24iOlswLDhdfSwiZXJyb3IiOm51bGx9 eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys({}, ["a", "c"]), php[0m
+{ error: [1mnull[22m, result: {}, time: [33m0[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys({}, ["a", "c"]), node[0m
+{
+  error: [1mnull[22m,
+  result: {},
+  time: [33m3[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php toMongoExpression eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoe30sIFtdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJPYmplY3RFeHByZXNzaW9uIiwicHJvcGVydGllcyI6W10sImxvY2F0aW9uIjpbOSwxMV19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbXSwibG9jYXRpb24iOlsxMywxNV19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys({}, []), mongo[0m
+{
+  error: [1mnull[22m,
+  result: {},
+  time: [33m1[39m,
+  code: [32m'pickKeys({}, [])'[39m,
+  command: [32m'/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php evaluate eyJ2ZXJzaW9uIjoxLCJjb2RlIjoicGlja0tleXMoe30sIFtdKSIsInNvdXJjZSI6eyJ0eXBlIjoiQ2FsbEV4cHJlc3Npb24iLCJhcmd1bWVudHMiOlt7InR5cGUiOiJPYmplY3RFeHByZXNzaW9uIiwicHJvcGVydGllcyI6W10sImxvY2F0aW9uIjpbOSwxMV19LHsidHlwZSI6IkFycmF5RXhwcmVzc2lvbiIsImVsZW1lbnRzIjpbXSwibG9jYXRpb24iOlsxMywxNV19XSwiY2FsbGVlIjoicGlja0tleXMiLCJsb2NhdGlvbiI6WzAsOF19LCJlcnJvciI6bnVsbH0= eyIkdGVzdDEiOjEsIiR0ZS5zdDIiOjEsIiQwIjoyLCJudW1iZXIwIjowLCJudW1iZXIxIjoxLCJudW1iZXIyIjoyLCJudW1iZXIzIjozLCJudW1iZXI0Ijo0LCJudW1iZXJfMWVfNDAiOjFlKzQwLCJtaW51czIiOi0yLCJzdHJpbmcwIjoiIiwic3RyaW5nMSI6ImFiYyIsInN0cmluZzIiOiJkZWYiLCJvYmplY3QwIjp7fSwib2JqZWN0MSI6eyJhIjoxfSwib2JqZWN0MiI6eyJhIjoxLCJiIjoyLCJjIjozLCJkIjo0fSwiYXJyYXkwIjpbXSwiYXJyYXkxIjpbMSwyLDNdLCJudWxsMSI6bnVsbCwidHJ1ZTEiOnRydWUsImZhbHNlMSI6ZmFsc2UsImRhdGUwIjp7Il9fZm9ybXVsYV9lbmNvZGVkX3R5cGVfXyI6ImRhdGUiLCJkYXRlIjoiMTk3MC0wMS0wMVQwMDowMDowMC4wMDBaIn19'[39m
+}
+    [32m  [32m✔[39m[0m[90m pickKeys({}, []), php[0m
+{ error: [1mnull[22m, result: {}, time: [33m0[39m }
+    [32m  [32m✔[39m[0m[90m pickKeys({}, []), node[0m
+
+
+[92m [0m[32m 51 passing[0m[90m (3s)[0m
+[31m  18 failing[0m
+
+[0m  1) specification
+       pickKeys()
+         pickKeys(1, ["a", "c"]), mongo:
+
+      [31mAssertionError: Different error from {"error":"optimize :: objectToArray1 :: number","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogaW50"}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-optimize :: objectToArray1 :: number[0m
+      [32m+optimize :: pickKeys1 :: number[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+[0m  2) specification
+       pickKeys()
+         pickKeys(Infinity, ["a", "c"]), mongo:
+
+      [31mAssertionError: Different error from {"error":"optimize :: objectToArray1 :: number","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogZG91Ymxl"}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-optimize :: objectToArray1 :: number[0m
+      [32m+optimize :: pickKeys1 :: number[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+[0m  3) specification
+       pickKeys()
+         pickKeys(NaN, ["a", "c"]), mongo:
+
+      [31mAssertionError: Different error from {"error":"optimize :: objectToArray1 :: number","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogZG91Ymxl"}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-optimize :: objectToArray1 :: number[0m
+      [32m+optimize :: pickKeys1 :: number[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+[0m  4) specification
+       pickKeys()
+         pickKeys("a", ["a", "c"]), mongo:
+
+      [31mAssertionError: Different error from {"error":"optimize :: objectToArray1 :: string","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogc3RyaW5n"}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-optimize :: objectToArray1 :: string[0m
+      [32m+optimize :: pickKeys1 :: string[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+[0m  5) specification
+       pickKeys()
+         pickKeys([], ["a", "c"]), mongo:
+
+      [31mAssertionError: Different error from {"error":"optimize :: objectToArray1 :: array","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogYXJyYXk="}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-optimize :: objectToArray1 :: array[0m
+      [32m+optimize :: pickKeys1 :: array[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+[0m  6) specification
+       pickKeys()
+         pickKeys(true, ["a", "c"]), mongo:
+
+      [31mAssertionError: Different error from {"error":"optimize :: objectToArray1 :: boolean","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError RmFpbGVkIHRvIG9wdGltaXplIHBpcGVsaW5lIDo6IGNhdXNlZCBieSA6OiAkb2JqZWN0VG9BcnJheSByZXF1aXJlcyBhIGRvY3VtZW50IGlucHV0LCBmb3VuZDogYm9vbA=="}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-optimize :: objectToArray1 :: boolean[0m
+      [32m+optimize :: pickKeys1 :: boolean[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+[0m  7) specification
+       pickKeys()
+         pickKeys(object2, 1), mongo:
+
+      [31mAssertionError: Different error from {"error":"evaluate :: in1 :: number","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogaW50"}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-evaluate :: in1 :: number[0m
+      [32m+evaluate :: pickKeys2 :: number[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+[0m  8) specification
+       pickKeys()
+         pickKeys(object2, Infinity), mongo:
+
+      [31mAssertionError: Different error from {"error":"evaluate :: in1 :: number","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogZG91Ymxl"}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-evaluate :: in1 :: number[0m
+      [32m+evaluate :: pickKeys2 :: number[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+[0m  9) specification
+       pickKeys()
+         pickKeys(object2, NaN), mongo:
+
+      [31mAssertionError: Different error from {"error":"evaluate :: in1 :: number","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogZG91Ymxl"}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-evaluate :: in1 :: number[0m
+      [32m+evaluate :: pickKeys2 :: number[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+[0m  10) specification
+       pickKeys()
+         pickKeys(object2, "a"), mongo:
+
+      [31mAssertionError: Different error from {"error":"evaluate :: in1 :: string","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogc3RyaW5n"}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-evaluate :: in1 :: string[0m
+      [32m+evaluate :: pickKeys2 :: string[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+[0m  11) specification
+       pickKeys()
+         pickKeys(object2, {}), mongo:
+
+      [31mAssertionError: Different error from {"error":"evaluate :: in1 :: object","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogb2JqZWN0"}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-evaluate :: in1 :: object[0m
+      [32m+evaluate :: pickKeys2 :: object[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+[0m  12) specification
+       pickKeys()
+         pickKeys(object2, true), mongo:
+
+      [31mAssertionError: Different error from {"error":"evaluate :: in1 :: boolean","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogYm9vbA=="}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-evaluate :: in1 :: boolean[0m
+      [32m+evaluate :: pickKeys2 :: boolean[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+[0m  13) specification
+       pickKeys()
+         pickKeys(number1, ["a", "c"]), mongo:
+
+      [31mAssertionError: Different error from {"error":"evaluate :: objectToArray1 :: number","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJG9iamVjdFRvQXJyYXkgcmVxdWlyZXMgYSBkb2N1bWVudCBpbnB1dCwgZm91bmQ6IGludA=="}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-evaluate :: objectToArray1 :: number[0m
+      [32m+evaluate :: pickKeys1 :: number[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+[0m  14) specification
+       pickKeys()
+         pickKeys(string1, ["a", "c"]), mongo:
+
+      [31mAssertionError: Different error from {"error":"evaluate :: objectToArray1 :: string","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJG9iamVjdFRvQXJyYXkgcmVxdWlyZXMgYSBkb2N1bWVudCBpbnB1dCwgZm91bmQ6IHN0cmluZw=="}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-evaluate :: objectToArray1 :: string[0m
+      [32m+evaluate :: pickKeys1 :: string[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+[0m  15) specification
+       pickKeys()
+         pickKeys(array1, ["a", "c"]), mongo:
+
+      [31mAssertionError: Different error from {"error":"evaluate :: objectToArray1 :: array","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJG9iamVjdFRvQXJyYXkgcmVxdWlyZXMgYSBkb2N1bWVudCBpbnB1dCwgZm91bmQ6IGFycmF5"}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-evaluate :: objectToArray1 :: array[0m
+      [32m+evaluate :: pickKeys1 :: array[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+[0m  16) specification
+       pickKeys()
+         pickKeys(object2, number1), mongo:
+
+      [31mAssertionError: Different error from {"error":"evaluate :: in1 :: number","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogaW50"}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-evaluate :: in1 :: number[0m
+      [32m+evaluate :: pickKeys2 :: number[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+[0m  17) specification
+       pickKeys()
+         pickKeys(object2, string1), mongo:
+
+      [31mAssertionError: Different error from {"error":"evaluate :: in1 :: string","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogc3RyaW5n"}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-evaluate :: in1 :: string[0m
+      [32m+evaluate :: pickKeys2 :: string[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+[0m  18) specification
+       pickKeys()
+         pickKeys(object2, object1), mongo:
+
+      [31mAssertionError: Different error from {"error":"evaluate :: in1 :: object","result":null,"command":"/usr/bin/php /home/dell/pr/creatium/creatium-formulas/creatium-formulas/test/cli.php parseMongoError UGxhbkV4ZWN1dG9yIGVycm9yIGR1cmluZyBhZ2dyZWdhdGlvbiA6OiBjYXVzZWQgYnkgOjogJGluIHJlcXVpcmVzIGFuIGFycmF5IGFzIGEgc2Vjb25kIGFyZ3VtZW50LCBmb3VuZDogb2JqZWN0"}[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-evaluate :: in1 :: object[0m
+      [32m+evaluate :: pickKeys2 :: object[0m
+      [0m[90m
+      at Assertion.fail (node_modules/should/as-function.js:275:17)
+      at Assertion.value (node_modules/should/as-function.js:356:19)
+      at Context.<anonymous> (test/specification.test.js:47:55)
+      at process.processImmediate (node:internal/timers:476:21)
+[0m
+
+
+^C
+Script done on 2025-02-05 08:07:04-05:00 [COMMAND_EXIT_CODE="130"]

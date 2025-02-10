@@ -1,0 +1,19 @@
+{
+  "name": "creatium/formulas",
+  "description": "Formulas",
+  "type": "library",
+  "license": "Private",
+  "authors": [
+    {
+      "name": "Veaceslav Grimalschi",
+      "email": "itareo@gmail.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "formulas\\" : "./php/formulas"
+    }
+  }
+}

@@ -1,0 +1,470 @@
+{
+  "parseError": {
+    "ru": "Ошибка синтаксиса в формуле",
+    "en": "Syntax error in formula"
+  },
+  "evaluateError": {
+    "ru": "Ошибка выполнения формулы",
+    "en": "Formula execution error"
+  },
+  "validateError": {
+    "ru": "Ошибка чтения формулы",
+    "en": "Formula reading error"
+  },
+  "finalizeError": {
+    "ru": "Ошибка выполнения формулы",
+    "en": "Formula execution error"
+  },
+  "convertError": {
+    "ru": "Ошибка формирования запроса",
+    "en": "Query preparation error"
+  },
+  "preevalError": {
+    "ru": "Ошибка формирования запроса",
+    "en": "Query preparation error"
+  },
+  "pathTypeError": {
+    "ru": "Неверный путь",
+    "en": "Invalid path"
+  },
+  "parse1": {
+    "ru": "Комментарий не закрыт, не хватает */",
+    "en": "Comment not closed, missing */"
+  },
+  "parse2": {
+    "ru": "Неожиданный символ \"$1\"",
+    "en": "Unexpected character \"$1\""
+  },
+  "parse3": {
+    "ru": "Ожидается выражение после $1",
+    "en": "Expression expected after $1"
+  },
+  "parse4": {
+    "ru": "Отсутствует аргумент оператора",
+    "en": "Missing operator argument"
+  },
+  "parse5": {
+    "ru": "Ожидается символ \"$1\"",
+    "en": "Expected character \"$1\""
+  },
+  "parse6": {
+    "ru": "Название переменной не может начинаться с цифры ($1)",
+    "en": "Variable names must not start with a number ($1)"
+  },
+  "parse7": {
+    "ru": "Число слишком большое",
+    "en": "Too large number"
+  },
+  "parse8": {
+    "ru": "Незакрытая скобка $1",
+    "en": "Missing bracket $1"
+  },
+  "parse9": {
+    "ru": "Отсутствует символ \"$1\"",
+    "en": "Missing character \"$1\""
+  },
+  "parse10": {
+    "ru": "Неверный тип ключа",
+    "en": "Wrong key type"
+  },
+  "parse11": {
+    "ru": "Ожидается свойство объекта",
+    "en": "Object property expected"
+  },
+  "parse12": {
+    "ru": "Неверный ключ объекта",
+    "en": "Wrong object key"
+  },
+  "parse13": {
+    "ru": "Неожиданный вызов функции",
+    "en": "Unexpected function call"
+  },
+  "parse14": {
+    "ru": "Вызов неизвестной функции: $1",
+    "en": "Unknown function call: $1"
+  },
+  "parse15": {
+    "ru": "Ожидается экспонента ($1)",
+    "en": "Expected exponent ($1)"
+  },
+  "parse16": {
+    "ru": "Незакрытая кавычка после \"$1\"",
+    "en": "Missing quote after \"$1\""
+  },
+  "parse17": {
+    "ru": "Неверный формат даты",
+    "en": "Wrong date format"
+  },
+  "parse18": {
+    "ru": "Ожидается оператор присваивания",
+    "en": "Assignment operator expected"
+  },
+  "parse19": {
+    "ru": "Ожидается идентификатор",
+    "en": "Identifier expected"
+  },
+  "var1": {
+    "ru": "Переменной \"$1\" не существует",
+    "en": "Variable \"$1\" does not exist"
+  },
+  "add1": {
+    "ru": "Складывать можно только числа и даты (не $1)",
+    "en": "Only numbers and dates can be added (не $1)"
+  },
+  "subtract1": {
+    "ru": "Невозможно вычесть $1 из $2",
+    "en": "Unable to subtract $1 from $2"
+  },
+  "mod1": {
+    "ru": "Делить (%) на ноль нельзя",
+    "en": "(%) cannot be divided by zero"
+  },
+  "mod2": {
+    "ru": "Невозможно поделить (%) $1 на $2",
+    "en": "Unable to divide (%) $1 by $2"
+  },
+  "divide1": {
+    "ru": "Делить на ноль нельзя",
+    "en": "Divide by zero is not allowed"
+  },
+  "divide2": {
+    "ru": "Невозможно поделить $1 на $2",
+    "en": "Unable to divide $1 by $2"
+  },
+  "member1": {
+    "ru": "Невозможно прочитать свойство типа $2 из $1",
+    "en": "Unable to read property of type $2 from $1"
+  },
+  "member2": {
+    "ru": "Отсутствует свойство объекта или элемент массива ($1)",
+    "en": "Missing object property or array element ($1)"
+  },
+  "member3": {
+    "ru": "Номер элемента массива должен быть целым 32-битным числом",
+    "en": "The array element number must be a 32-bit integer"
+  },
+  "fn1": {
+    "ru": "Функция $1 работает только с массивами (передано $2)",
+    "en": "The $1 function works with arrays only ($1 passed)"
+  },
+  "arg_1st": {
+    "ru": "Первый аргумент",
+    "en": "First argument"
+  },
+  "arg_2nd": {
+    "ru": "Второй аргумент",
+    "en": "Second argument"
+  },
+  "arg_3rd": {
+    "ru": "Третий аргумент",
+    "en": "Third argument"
+  },
+  "fn2": {
+    "ru": "$arg функции $1 должен быть числом (передано $2)",
+    "en": "$arg of the $1 function must be a number ($2 passed)"
+  },
+  "fn3": {
+    "ru": "$arg функции $1 должен быть целым 32-битным числом",
+    "en": "$arg of the $1 function must be a 32-bit integer"
+  },
+  "fn4": {
+    "ru": "$arg функции $1 должен быть строкой",
+    "en": "$arg of the $1 function must be a string"
+  },
+  "fn5": {
+    "ru": "$arg функции $1 должен быть строкой (передано $2)",
+    "en": "$arg of the $1 function must be a string ($2 passed)"
+  },
+  "fn6": {
+    "ru": "Функция $1 работает только со строками (передано $2)",
+    "en": "The $1 function works with strings only ($2 passed)"
+  },
+  "fn7": {
+    "ru": "Функция $1 работает только с числами (передано $2)",
+    "en": "The $1 function works with numbers only ($2 passed)"
+  },
+  "slice2": {
+    "ru": "Третий аргумент ($1) функции slice должен быть положительным числом",
+    "en": "The third argument ($1) of the slice function must be a positive number"
+  },
+  "slice3": {
+    "ru": "Второй аргумент ($1) функции slice должен быть числом",
+    "en": "The second argument ($1) of the slice function must be a number"
+  },
+  "substr3": {
+    "ru": "Второй аргумент функции substr не должен быть отрицательным числом",
+    "en": "The second argument of the substr function must not be a negative number"
+  },
+  "substr5": {
+    "ru": "Третий аргумент функции substr не должен быть отрицательным числом",
+    "en": "The third argument of the substr function must not be a negative number"
+  },
+  "regexTest3": {
+    "ru": "Третий аргумент функции regexTest не может быть выражением",
+    "en": "The third argument of the regexTest function cannot be an expression"
+  },
+  "regexTest4": {
+    "ru": "Третий аргумент функции regexTest содержит неизвестные опции",
+    "en": "The third argument of the regexTest function consists of unknown options"
+  },
+  "regexMatch3": {
+    "ru": "Третий аргумент функции regexMatch не может быть выражением",
+    "en": "The third argument of the regexMatch function cannot be an expression"
+  },
+  "regexMatch4": {
+    "ru": "Третий аргумент функции regexMatch содержит неизвестные опции",
+    "en": "The third argument of the regexMatch function consists of unknown options"
+  },
+  "regexMatchAll3": {
+    "ru": "Третий аргумент функции regexMatchAll не может быть выражением",
+    "en": "The third argument of the regexMatchAll function cannot be an expression"
+  },
+  "regexMatchAll4": {
+    "ru": "Третий аргумент функции regexMatchAll содержит неизвестные опции",
+    "en": "The third argument of the regexMatchAll function consists of unknown options"
+  },
+  "range7": {
+    "ru": "Третий аргумент функции range не может быть 0",
+    "en": "The third argument of the range function cannot be 0"
+  },
+  "pow3": {
+    "ru": "Слишком большое число в результате выполнения функции pow",
+    "en": "Too large number as a result of the pow function"
+  },
+  "pow4": {
+    "ru": "Ошибка выполнения функции pow",
+    "en": "Pow function error"
+  },
+  "log3": {
+    "ru": "Первый аргумент функции log должен быть положительным числом",
+    "en": "The first argument of the log function must be a positive number"
+  },
+  "log4": {
+    "ru": "Второй аргумент функции log должен быть положительным числом не равным 1",
+    "en": "The second argument of the log function must be a positive number not equal to 1"
+  },
+  "split3": {
+    "ru": "Второй аргумент функции split не может быть пустой строкой",
+    "en": "The second argument of the split function must not be an empty string"
+  },
+  "convert1": {
+    "ru": "Невозможно преобразовать $1 в $2",
+    "en": "Unable to convert $1 to $2"
+  },
+  "convert2": {
+    "ru": "Дата, преобразуемая в строку должна быть в пределах 10 тысяч лет",
+    "en": "The date converted to a string must be within 10,000 years"
+  },
+  "convert3": {
+    "ru": "Невозможно преобразовать $1 в $2",
+    "en": "Unable to convert $1 to $2"
+  },
+  "convert4": {
+    "ru": "Невозможно преобразовать пустую строку в число",
+    "en": "Unable to convert the empty string to a number"
+  },
+  "convert5": {
+    "ru": "Невозможно преобразовать строку в число: неверный формат",
+    "en": "Unable to convert the string to a number: invalid format"
+  },
+  "convert6": {
+    "ru": "Невозможно преобразовать строку в число: число слишком велико",
+    "en": "Unable to convert the string to a number: the number is too large"
+  },
+  "convert7": {
+    "ru": "Невозможно преобразовать NaN в число",
+    "en": "Cannot convert NaN to integer"
+  },
+  "round2": {
+    "ru": "Второй аргумент функции round должен быть в диапазоне от -20 до 100",
+    "en": "The second argument of the round function must be from -20 to 100"
+  },
+  "round3": {
+    "ru": "Второй аргумент функции round должен быть целым числом",
+    "en": "The second argument of the round function must be an integer"
+  },
+  "trunc2": {
+    "ru": "Второй аргумент функции trunc должен быть в диапазоне от -20 до 100",
+    "en": "The second argument of the trunc function must be from -20 to 100"
+  },
+  "sqrt2": {
+    "ru": "Функция sqrt не работает с отрицательными числами",
+    "en": "The sqrt function does not work with negative numbers"
+  },
+  "sin2": {
+    "ru": "Функция sin работает только с конечными числами",
+    "en": "The sin function works with finite numbers only"
+  },
+  "cos2": {
+    "ru": "Функция cos работает только с конечными числами",
+    "en": "The cos function works with finite numbers only"
+  },
+  "atanh2": {
+    "ru": "Функция atanh работает только с числами в диапазоне от -1 до 1",
+    "en": "The atanh function works with numbers between -1 and 1 only"
+  },
+  "acos2": {
+    "ru": "Функция acos работает только с числами в диапазоне от -1 до 1",
+    "en": "The acos function works with numbers between -1 and 1 only"
+  },
+  "acosh2": {
+    "ru": "Функция acosh работает только с числами в диапазоне от 1",
+    "en": "The acosh function works with numbers in the range from 1"
+  },
+  "asin2": {
+    "ru": "Функция asin работает только с числами в диапазоне от -1 до 1",
+    "en": "The asin function works with numbers between -1 and 1 only"
+  },
+  "tan2": {
+    "ru": "Функция tan работает только с конечными числами",
+    "en": "The tan function works with finite numbers only"
+  },
+  "in1": {
+    "ru": "Оператор in работает только с массивами (передано $1)",
+    "en": "The in operator works with arrays only ($1 passed)"
+  },
+  "general1": {
+    "ru": "Слишком большое число",
+    "en": "Too large number"
+  },
+  "toDate1": {
+    "ru": "Ошибка преобразования значения в дату",
+    "en": "Error converting the value to date"
+  },
+  "let1": {
+    "ru": "Первый аргумент функции let должен быть статичным объектом",
+    "en": "The first argument of the let function must be a static object"
+  },
+  "let2": {
+    "ru": "Названия переменных в функции let должны содержать только латинские буквы и цифры",
+    "en": "Variable names in the let function must consist of Latin letters and numbers only "
+  },
+  "indexOf1": {
+    "ru": "Первый аргумент функции indexOf должен быть массивом (передано $1)",
+    "en": "The first argument of the indexOf function must be an array ($1 passed)"
+  },
+  "arrayToObject1": {
+    "ru": "Функция arrayToObject работает только с массивами (передано $1)",
+    "en": "The arrayToObject function works with arrays only ($1 passed)"
+  },
+  "arrayToObject2": {
+    "ru": "Функция arrayToObject ожидает массив из пар ключ-значение (передано $1)",
+    "en": ""
+  },
+  "arrayToObject3": {
+    "ru": "Функция arrayToObject ожидает массив из пар ключ-значение, где ключ является строкой (передано $1)",
+    "en": ""
+  },
+  "arrayToObject4": {
+    "ru": "Функция arrayToObject ожидает массив из пар ключ-значение размером в 2 элемента (передано $1)",
+    "en": ""
+  },
+  "arrayToObject5": {
+    "ru": "Функция arrayToObject ожидает, что все элементы будут или массивами или объектами (передано $1, потом $2)",
+    "en": ""
+  },
+  "arrayToObject6": {
+    "ru": "Функция arrayToObject ожидает, что все элементы будут объектами с полями \"k\" и \"v\", где \"k\" это строка (передано $1)",
+    "en": ""
+  },
+  "arrayToObject7": {
+    "ru": "Функция arrayToObject ожидает массив объектов с двумя полями \"k\" и \"v\" (передано $1)",
+    "en": ""
+  },
+  "arrayToObject8": {
+    "ru": "Функция arrayToObject ожидает массив объектов с двумя полями \"k\" и \"v\", отсутствует одно из них, или оба",
+    "en": ""
+  },
+  "pickKeys1": {
+    "ru": "Первый аргумент функции pickKeys должен быть объектом (передано $1)",
+    "en": "The first argument of the pickKeys function must be an object ($1 passed)"
+  },
+  "pickKeys2": {
+    "ru": "Второй аргумент функции pickKeys должен быть  массивом (передано $1)",
+    "en": "The second argument of the pickKeys function must be an array ($1 passed)"
+  },
+  "pickKeys3": {
+    "ru": "Все элементы массива переданого функции pickKeys должны быть строками (передано $1)",
+    "en": "All elements of the array passed to function pickKeys should be of type string ($1 passed)"
+  },
+  "objectToArray1": {
+    "ru": "Функция objectToArray работает только с объектами (передано $1)",
+    "en": "The objectToArray function works with objects only ($1 passed)"
+  },
+  "dateAdd1": {
+    "ru": "Аргумент 'unit' функции dateAdd должен быть строкой (передано $1)",
+    "en": "The ‘unit’ argument of the dateAdd function must be a string ($1 passed)"
+  },
+  "dateAdd2": {
+    "ru": "Аргумент 'date' функции dateAdd должен быть датой",
+    "en": "The ‘date’ argument of the dateAdd function must be a date"
+  },
+  "dateAdd3": {
+    "ru": "Аргумент 'unit' функции dateAdd не правильный",
+    "en": ""
+  },
+  "dateAdd4": {
+    "ru": "Аргумент 'amount' функции dateAdd должен быть целым числом",
+    "en": "The ‘amount’ argument of the date Add function must be an integer"
+  },
+  "dateAdd5": {
+    "ru": "Аргумент 'amount' функции dateAdd не правильный",
+    "en": ""
+  },
+  "dateSubtract1": {
+    "ru": "Аргумент 'unit' функции dateSubtract должен быть строкой (передано $1)",
+    "en": "The ‘unit’ argument of the dateSubstract function must be a string ($1 passed)"
+  },
+  "dateSubtract2": {
+    "ru": "Аргумент 'date' функции dateSubtract должен быть датой",
+    "en": "The ‘date’ argument of the dateSubstract function must be a date"
+  },
+  "dateSubtract3": {
+    "ru": "Аргумент 'unit' функции dateSubtract не правильный",
+    "en": ""
+  },
+  "dateSubtract4": {
+    "ru": "Аргумент 'amount' функции dateSubtract должен быть целым числом",
+    "en": "The ‘amount’ argument of the dateSubstract function must be an integer"
+  },
+  "dateSubtract5": {
+    "ru": "Аргумент 'amount' функции dateSubtract не правильный",
+    "en": ""
+  },
+  "exists1": {
+    "ru": "Неверный аргумент функции exists",
+    "en": ""
+  },
+  "unique1": {
+    "ru": "Первый аргумент функции unique должен быть массивом (передано $1)",
+    "en": "The first argument of the unique function must be an array ($1 passed)"
+  },
+  "editor": {
+    "goto_playground": {
+      "ru": "Открыть в песочнице",
+      "en": "Open in playground"
+    },
+    "playground_href": {
+      "ru": "https://cremax.ru/formula-playground",
+      "en": "https://crebase.com/formula-playground"
+    }
+  },
+  "scope_viewer": {
+    "copy_path": {
+      "ru": "Скопировать путь: %path%",
+      "en": "Copy path: %path%"
+    },
+    "copied": {
+      "ru": "Скопировано: %path%",
+      "en": "Copied: %path%"
+    }
+  },
+  "toTable1": {
+    "ru": "Ожидался массив, передано $1",
+    "en": "Array expected, $1 passed"
+  },
+  "toTable2": {
+    "ru": "Ожидался массив объектов, найден элемент $1",
+    "en": ""
+  }
+}
