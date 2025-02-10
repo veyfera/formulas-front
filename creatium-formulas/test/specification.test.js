@@ -5363,7 +5363,9 @@ describe('specification', () => {
         'arrayToObject([{k: 1, v: "2"}])': new Error('optimize :: arrayToObject6 :: number'),
     }));
 
-    describe.only('pickKeys()', factory({
+    describe('pickKeys()', factory({
+        //some mongo test fail (wrong error messages), the errors point to built in
+        //functions (objectToArray, in) rather than to pickKeys
         'pickKeys(1, ["a", "c"])': new Error('optimize :: pickKeys1 :: number'),
         'pickKeys(Infinity, ["a", "c"])': new Error('optimize :: pickKeys1 :: number'),
         'pickKeys(NaN, ["a", "c"])': new Error('optimize :: pickKeys1 :: number'),
